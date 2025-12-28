@@ -1,0 +1,77 @@
+{
+  "ecobikes": {
+    "title": "Ecobikes – Plataforma de logística en bicicleta",
+    "category": "Logística sostenible, envíos same-day, gestión de riders",
+    "technologies": "Angular 20, PocketBase, Node.js, Google Maps API, Bootstrap, Swiper",
+    "services": "Desarrollo web completo, panel administrativo, GPS tracking, sistema de órdenes",
+    "client": "Ecobikes Chile",
+    "date": "2024 – 2025",
+    "status": "En Producción",
+    "demoUrl": "https://ecobikes.cl",
+    "scope": "Operación en Chile, optimizada para múltiples comunas y zonas de entrega.",
+    "serviceTypes": "Envíos express, logística empresarial, servicios de última milla.",
+
+    "description": [
+      "Ecobikes es una plataforma de logística sostenible que conecta empresas y comercios con repartidores en bicicleta. El sistema permite crear envíos, asignarlos a riders y hacer seguimiento GPS en tiempo real.",
+      "Incluye un panel administrativo para monitorear pedidos, ingresos, rutas, estados y rendimiento de cada rider.",
+      "Integra cálculo de distancias con Google Maps y tarifas automáticas según zonas y comunas."
+    ],
+
+    "challenge": "El reto fue desarrollar una arquitectura escalable capaz de procesar órdenes en tiempo real con geolocalización precisa y notificaciones instantáneas.",
+    "solution": "Se construyó un ecosistema modular con Angular y PocketBase, integrando mapas, tarifas dinámicas, tracking GPS y dashboards avanzados.",
+
+    "results": [
+      "Sistema totalmente operativo con geolocalización en tiempo real.",
+      "Panel administrativo robusto con reportes e historial.",
+      "Optimización de rutas y reducción de tiempos de entrega.",
+      "Arquitectura lista para escalar a otros países."
+    ],
+
+    "gallery": [
+      "assets/img/portfolio/eco_1.png",
+      "assets/img/portfolio/eco_2.png"
+    ],
+
+    "prevProject": "project-details.html?id=tecnicos_y_reparacion",
+    "nextProject": "project-details.html?id=tecnicos_y_reparacion"
+  },
+
+
+
+  "tecnicos_y_reparacion": {
+    "title": "Tu Reparador – Marketplace de técnicos y expertos",
+    "category": "Servicios técnicos, reparaciones y mantenimiento",
+    "technologies": "HTML, CSS, JavaScript, Bootstrap Grid, Swiper, Fancybox",
+    "services": "Desarrollo web, UI/UX, Formularios inteligentes, Conexión expertos–clientes",
+    "client": "Tu Reparador",
+    "date": "2024 – 2025",
+    "status": "En Producción",
+    "demoUrl": "#",
+    "scope": "Disponible en múltiples países con selector de región y moneda.",
+    "serviceTypes": "Electricidad, plomería, carpintería, pintura, cámaras, limpieza, gasfitería, instalaciones y más.",
+
+    "description": [
+      "Tu Reparador es una plataforma digital para conectar usuarios con expertos verificados en reparaciones y servicios técnicos.",
+      "Los proveedores cuentan con perfiles completos, zona de cobertura, calificaciones, portafolio y sistema de reputación.",
+      "Los clientes pueden realizar solicitudes, subir fotos, comparar propuestas y coordinar trabajos."
+    ],
+
+    "challenge": "Crear un marketplace rápido, intuitivo y capaz de manejar miles de solicitudes en tiempo real.",
+    "solution": "Arquitectura modular con formularios inteligentes, catálogos dinámicos, diseño responsive y flujos optimizados para expertos y clientes.",
+
+    "results": [
+      "Más de 2.400 expertos verificados.",
+      "Disponible 24/7 y preparado para múltiples países.",
+      "Flujos ágiles para solicitud, comparación y contratación.",
+      "Base sólida para integrar pagos y app móvil nativa."
+    ],
+
+    "gallery": [
+      "assets/img/portfolio/portfolio_inner_1.png",
+      "assets/img/portfolio/portfolio_inner_2.png"
+    ],
+
+    "prevProject": "project-details.html?id=ecobikes",
+    "nextProject": "project-details.html?id=ecobikes"
+  }
+}

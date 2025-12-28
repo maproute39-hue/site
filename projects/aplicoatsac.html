@@ -1,0 +1,117 @@
+<div class="project-details-page-area space">
+    <div class="container">
+
+        <!-- GALERÍA PRINCIPAL -->
+        <div class="swiper project-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="project-inner-thumb mb-80">
+        <img class="w-100" src="../images/reparador_1.png" alt="Ecobikes plataforma">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="project-inner-thumb mb-80">
+        <img class="w-100" src="../images/reparador_2.png" alt="Ecobikes app móvil">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Navigation arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+        <div class="row justify-content-between flex-row-reverse">
+
+            <!-- INFORMACIÓN -->
+            <div class="col-xl-3 col-lg-4">
+                <div class="project-details-info mb-lg-0 mb-40">
+                    <ul class="list-wrap">
+                        <li><span>Categoría:</span> Logística sostenible / Envíos</li>
+                        <li><span>Tecnologías:</span> Angular, PocketBase, Node.js, Maps API, APICLOUD META WHATSAPP</li>
+                        <li><span>Cliente:</span> Ecobikes Chile</li>
+                        <li><span>Fecha:</span> 2024 – 2025</li>
+                        <li><span>Estado:</span> <strong style="color:#0cc067;">En Producción</strong></li>
+                        <li>
+                            <span>Demo:</span>
+                            <a href="https://ecobikes.cl" target="_blank">Visitar plataforma</a>
+                        </li>
+                        <li><span>Ámbito:</span> Santiago de Chile</li>
+                        <li><span>Servicios:</span> Envíos express, última milla</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- DESCRIPCIÓN -->
+            <div class="col-lg-8">
+                <div class="title-area mb-35">
+                    <h2 class="sec-title">Ecobikes – Plataforma de logística sostenible</h2>
+
+                    <p class="sec-text mt-30">
+                        Ecobikes es una plataforma creada para conectar repartidores en bicicleta con empresas y comercios.
+                    </p>
+
+                    <p class="sec-text mt-30">
+                        Permite crear envíos, rastrear en tiempo real, generar tarifas dinámicas y gestionar rutas y riders.
+                    </p>
+                </div>
+
+                <h3>Reto y Solución</h3>
+                <p class="sec-text mb-n1">
+                    Se necesitaba una plataforma rápida, precisa y escalable que integrara geolocalización y logística avanzada.
+                </p>
+                <p class="sec-text mb-n1">
+                    Se implementó node.js + express.js + typescript + APICLOUD META WHATSAPP + Angular + PocketBase + Google Maps, optimizando rendimiento móvil y panel administrativo.
+                </p>
+
+                <h3 class="mt-35">Resultado Final</h3>
+                <p class="sec-text mb-n1">Sistema operativo con tracking GPS 24/7.</p>
+                <p class="sec-text mb-n1">Panel administrativo con reportes en tiempo real.</p>
+                <p class="sec-text mb-n1">Arquitectura modular lista para escalar a otros países.</p>
+            </div>
+
+            <!-- NAVEGACIÓN -->
+            <div class="col-lg-12">
+                <div class="inner__page-nav space-top mt-n1 mb-n1">
+                    <a href="project-details.html?id=tecnicos" class="nav-btn">
+                        <i class="fa fa-arrow-left"></i> 
+                        <span><span class="link-effect">
+                            <span class="effect-1">ANTERIOR PROYECTO</span>
+                            <span class="effect-1">ANTERIOR PROYECTO</span>
+                        </span></span>
+                    </a>
+
+                    <a href="project-details.html?id=tecnicos" class="nav-btn">
+                        <span><span class="link-effect">
+                            <span class="effect-1">PRÓXIMO PROYECTO</span>
+                            <span class="effect-1">PRÓXIMO PROYECTO</span>
+                        </span></span>
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Swiper Initialization -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    new Swiper('.project-swiper', {
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        }
+    });
+});
+</script>

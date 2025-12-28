@@ -1,0 +1,113 @@
+[
+  {
+    "id": 1,
+    "type": "Sitios Web",
+    "title": "Anti Money Laundering Compliance Scanner",
+    "subtitle": "Plataforma avanzada para análisis AML",
+    "categories": ["Branding", "Development", "Marketing"],
+    "image": "assets/img/portfolio/portfolio1_3.jpg",
+
+    "description": "Solución diseñada para automatizar procesos de análisis AML usando herramientas de verificación, IA y análisis documental.",
+
+    "sections": {
+      "overview": "BaseCreate es reconocida por reinventar identidades digitales. Para este proyecto desarrollamos una plataforma robusta orientada al cumplimiento normativo y a la detección temprana de actividades sospechosas.",
+      "challenge": "El desafío fue diseñar un sistema que procesara grandes volúmenes de datos, generara reportes y alertas automáticas sin comprometer la velocidad ni la experiencia del usuario.",
+      "solution": "Desarrollamos una arquitectura modular usando Angular y Node.js con microservicios escalables para soportar análisis en tiempo real.",
+      "final_result": "La plataforma redujo en un 70% los tiempos de análisis manual y permitió a los equipos de cumplimiento enfocarse en casos de alto riesgo."
+    },
+
+    "client": "ACME Financial Group",
+    "software": ["Angular", "Node.js", "MongoDB"],
+    "service": "Development",
+    "date": "2024-09-18",
+
+    "gallery": [
+      "assets/img/portfolio/portfolio1_3.jpg",
+      "assets/img/portfolio/details1.jpg"
+    ]
+  },
+
+  {
+    "id": 2,
+    "type": "Sitios Web",
+    "title": "Shopify Redesign for a Nova Scotia Winery",
+    "subtitle": "Rediseño completo para mejorar conversión",
+    "categories": ["Branding", "Development", "Marketing"],
+    "image": "assets/img/portfolio/portfolio1_4.jpg",
+
+    "description": "Rediseño de experiencia de usuario para una tienda Shopify orientada a mejorar conversión y experiencia visual.",
+
+    "sections": {
+      "overview": "El cliente necesitaba un sitio moderno, intuitivo y enfocado en ventas. Se realizó un estudio UX/UI y migración a Shopify 2.0.",
+      "challenge": "El sitio previo tenía baja retención y mala experiencia móvil.",
+      "solution": "Implementamos un diseño visual premium, optimizamos fichas de producto y configuramos automatizaciones.",
+      "final_result": "La conversión aumentó un 32% tras el rediseño."
+    },
+
+    "client": "Nova Scotia Winery",
+    "software": ["Shopify", "Liquid", "Figma"],
+    "service": "Development",
+    "date": "2024-07-12",
+
+    "gallery": [
+      "assets/img/portfolio/portfolio1_4.jpg",
+      "assets/img/portfolio/details2.jpg"
+    ]
+  },
+
+  {
+    "id": 3,
+    "type": "Apps Moviles",
+    "title": "Product Lineup Industrial Design for Caramba",
+    "subtitle": "Aplicación para gestión industrial",
+    "categories": ["Branding", "Development", "Marketing"],
+    "image": "assets/img/portfolio/portfolio1_5.png",
+
+    "description": "Solución móvil e industrial para monitoreo, control y gestión de maquinaria.",
+
+    "sections": {
+      "overview": "El cliente necesitaba una app intuitiva para visualizar estados y métricas de producción.",
+      "challenge": "La maquinaria generaba gran cantidad de datos en tiempo real.",
+      "solution": "Implementamos sockets, dashboards con gráficos y notificaciones.",
+      "final_result": "La eficiencia operacional aumentó un 21%."
+    },
+
+    "client": "Caramba Industries",
+    "software": ["React Native", "Node.js", "MySQL"],
+    "service": "Development",
+    "date": "2024-06-05",
+
+    "gallery": [
+      "assets/img/portfolio/portfolio1_5.png",
+      "assets/img/portfolio/details3.jpg"
+    ]
+  },
+
+  {
+    "id": 4,
+    "type": "Aplicaciones Web Progresivas",
+    "title": "Trading Website Design & Development",
+    "subtitle": "Plataforma de trading profesional",
+    "categories": ["Branding", "Development", "Marketing"],
+    "image": "assets/img/portfolio/portfolio1_6.png",
+
+    "description": "Plataforma web para trading con dashboards avanzados, gráficos e integración de APIs de mercado.",
+
+    "sections": {
+      "overview": "El reto fue diseñar un sitio rápido y seguro que soporte miles de solicitudes por minuto.",
+      "challenge": "Optimizar tiempos de respuesta para gráficos en tiempo real.",
+      "solution": "Implementamos WebSockets, caching en Redis y gráficos optimizados.",
+      "final_result": "El sitio logró tiempos de respuesta menores a 80 ms."
+    },
+
+    "client": "Global Trading Ltd.",
+    "software": ["Laravel", "Vue.js", "Redis"],
+    "service": "Development",
+    "date": "2024-04-20",
+
+    "gallery": [
+      "assets/img/portfolio/portfolio1_6.png",
+      "assets/img/portfolio/details4.jpg"
+    ]
+  }
+]

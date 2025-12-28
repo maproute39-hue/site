@@ -1,0 +1,118 @@
+<div class="project-details-page-area space">
+    <div class="container">
+
+        <!-- GALERÍA PRINCIPAL -->
+        <div class="swiper project-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="project-inner-thumb mb-80">
+        <img class="w-100" src="../images/reparador_1.png" alt="Fito">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="project-inner-thumb mb-80">
+        <img class="w-100" src="../images/reparador_2.png" alt="Fito">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Navigation arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+        <div class="row justify-content-between flex-row-reverse">
+
+            <!-- INFORMACIÓN -->
+            <div class="col-xl-3 col-lg-4">
+                <div class="project-details-info mb-lg-0 mb-40">
+                    <ul class="list-wrap">
+                        <li><span>Categoría:</span> Salud</li>
+                        <li><span>Tecnologías:</span> Angular, PocketBase, Node.js, Maps API</li>
+                        <li><span>Cliente:</span> Fito</li>
+                        <li><span>Fecha:</span> 2025 - 2026</li>
+                        <li><span>Estado:</span> <strong style="color:#0cc067;">En Producción</strong></li>
+                        <li>
+                            <span>Demo:</span>
+                            <a href="https://fitoapp.co" target="_blank">Visitar plataforma</a>
+                        </li>
+                        <li><span>Ámbito:</span> Medellín, Colombia</li>
+                        <li><span>Servicios:</span>Apliación Web + Aplicación Móvil</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- DESCRIPCIÓN -->
+          <div class="col-lg-8">
+    <div class="title-area mb-35">
+        <h2 class="sec-title">Fito – Plataforma rápida de salud digital</h2>
+
+        <p class="sec-text mt-30">
+            Fito es una aplicación que conecta usuarios con servicios médicos de forma inmediata: citas, consultas rápidas y acceso a profesionales de la salud.
+        </p>
+
+        <p class="sec-text mt-30">
+            Permite agendar citas, realizar pagos, gestionar historiales clínicos, recibir recordatorios y acceder a un panel médico centralizado.
+        </p>
+    </div>
+
+    <h3>Reto y Solución</h3>
+    <p class="sec-text mb-n1">
+        Se necesitaba una plataforma ágil, confiable y segura para manejar información sensible y mantener un flujo de atención continua.
+    </p>
+    <p class="sec-text mb-n1">
+        Se implementó Angular + Firebase + Google Maps + Wompi + Brevo, optimizando rendimiento móvil, notificaciones push y panel para especialistas.
+    </p>
+
+    <h3 class="mt-35">Resultado Final</h3>
+    <p class="sec-text mb-n1">App rápida con agendamiento, historial y notificaciones en tiempo real.</p>
+    <p class="sec-text mb-n1">Panel médico para gestionar usuarios, citas y reportes.</p>
+    <p class="sec-text mb-n1">Arquitectura lista para escalar y habilitar nuevos servicios de salud.</p>
+</div>
+
+
+            <!-- NAVEGACIÓN -->
+            <div class="col-lg-12">
+                <div class="inner__page-nav space-top mt-n1 mb-n1">
+                    <a href="project-details.html?id=tecnicos" class="nav-btn">
+                        <i class="fa fa-arrow-left"></i> 
+                        <span><span class="link-effect">
+                            <span class="effect-1">ANTERIOR PROYECTO</span>
+                            <span class="effect-1">ANTERIOR PROYECTO</span>
+                        </span></span>
+                    </a>
+
+                    <a href="project-details.html?id=tecnicos" class="nav-btn">
+                        <span><span class="link-effect">
+                            <span class="effect-1">PRÓXIMO PROYECTO</span>
+                            <span class="effect-1">PRÓXIMO PROYECTO</span>
+                        </span></span>
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Swiper Initialization -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    new Swiper('.project-swiper', {
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        }
+    });
+});
+</script>

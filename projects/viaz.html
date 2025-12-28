@@ -1,0 +1,129 @@
+<div class="project-details-page-area space">
+    <div class="container">
+
+        <!-- GALERÍA PRINCIPAL -->
+        <div class="swiper project-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="project-inner-thumb mb-80">
+                        <img class="w-100" src="../images/reparador_1.png" alt="Via-Z plataforma">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-inner-thumb mb-80">
+                        <img class="w-100" src="../images/reparador_2.png" alt="Via-Z app web + móvil">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="row justify-content-between flex-row-reverse">
+
+            <!-- INFORMACIÓN -->
+            <div class="col-xl-3 col-lg-4">
+                <div class="project-details-info mb-lg-0 mb-40">
+                    <ul class="list-wrap">
+                        <li><span>Categoría:</span> Logística / Transporte</li>
+                        <li><span>Tecnologías:</span> Angular, PocketBase, Node.js, Maps API, Stripe, Api Brevo
+                        </li>
+                        <li><span>Cliente:</span> Via-Z</li>
+                        <li><span>Fecha:</span> 2024 – 2025</li>
+                        <li><span>Estado:</span> <strong style="color:#0cc067;">En Producción</strong></li>
+                        <li>
+                            <span>Demo:</span>
+                            <a href="https://via-z.com" target="_blank">Visitar plataforma</a>
+                        </li>
+                        <li><span>Ámbito:</span> México</li>
+                        <li><span>Servicios:</span> Reservas, transporte</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- DESCRIPCIÓN -->
+            <div class="col-lg-8">
+                <div class="title-area mb-35">
+                    <h2 class="sec-title">Via-Z – Plataforma de reservas y transporte</h2>
+
+                    <p class="sec-text mt-30">
+                        Via-Z es una plataforma diseñada para gestionar reservas y transporte, conectando usuarios con
+                        conductores en tiempo real.
+                    </p>
+
+                    <p class="sec-text mt-30">
+                        Incluye un cotizador web que calcula distancias, aplica tarifas según tipo de servicio,
+                        categoría y capacidad del vehículo.
+                    </p>
+                </div>
+
+                <h3>Reto y Solución</h3>
+                <p class="sec-text mb-n1">
+                    Se necesitaba un sistema preciso y escalable capaz de integrar geolocalización, validaciones de
+                    tarifas, pagos seguros y comunicación inmediata.
+                </p>
+                <p class="sec-text mb-n1">
+                    Se implementó Node.js + Express.js + TypeScript + APICLOUD Meta WhatsApp + Angular + PocketBase +
+                    Google Maps + Stripe,
+                    optimizando el cotizador, las notificaciones por email, la seguridad de pagos y la sincronización
+                    con la app móvil para conductores.
+                </p>
+
+                <h3 class="mt-35">Resultado Final</h3>
+                <p class="sec-text mb-n1">Cotizador inteligente con cálculo de rutas y tarifas dinámicas.</p>
+                <p class="sec-text mb-n1">Pagos seguros integrados con Stripe y notificaciones automáticas por email.
+                </p>
+                <p class="sec-text mb-n1">Panel administrativo completo para gestionar servicios, tarifas y conductores.
+                </p>
+                <p class="sec-text mb-n1">Integración con la app móvil de conductores para asignaciones y seguimiento en
+                    vivo.</p>
+            </div>
+
+
+            <!-- NAVEGACIÓN -->
+            <div class="col-lg-12">
+                <div class="inner__page-nav space-top mt-n1 mb-n1">
+                    <a href="project-details.html?id=tecnicos" class="nav-btn">
+                        <i class="fa fa-arrow-left"></i>
+                        <span><span class="link-effect">
+                                <span class="effect-1">ANTERIOR PROYECTO</span>
+                                <span class="effect-1">ANTERIOR PROYECTO</span>
+                            </span></span>
+                    </a>
+
+                    <a href="project-details.html?id=tecnicos" class="nav-btn">
+                        <span><span class="link-effect">
+                                <span class="effect-1">PRÓXIMO PROYECTO</span>
+                                <span class="effect-1">PRÓXIMO PROYECTO</span>
+                            </span></span>
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Swiper Initialization -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('.project-swiper', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            }
+        });
+    });
+</script>

@@ -1,0 +1,129 @@
+<div class="project-details-page-area space">
+    <div class="container">
+
+        <!-- GALERÍA PRINCIPAL -->
+        <div class="swiper project-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="project-inner-thumb mb-80">
+                        <img class="w-100" src="../images/reparador_1.png" alt="Ongo Match – Aplicación móvil">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-inner-thumb mb-80">
+                        <img class="w-100" src="../images/reparador_2.png" alt="Ongo Match – Aplicación móvil">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="row justify-content-between flex-row-reverse">
+
+            <!-- INFORMACIÓN -->
+            <div class="col-xl-3 col-lg-4">
+                <div class="project-details-info mb-lg-0 mb-40">
+                    <ul class="list-wrap">
+                        <li><span>Categoría:</span> Aplicaciones Móviles / Datting / Match</li>
+                        <li><span>Tecnologías:</span> Angular, PocketBase, Node.js, Maps API, Wompi, Api Brevo
+                        </li>
+                        <li><span>Cliente:</span> Ongo Match</li>
+                        <li><span>Fecha:</span> 2024 – 2025</li>
+                        <li><span>Estado:</span> <strong style="color:#0cc067;">En Producción</strong></li>
+                        <li>
+                            <span>Demo:</span>
+                            <a href="https://ongomatch.com" target="_blank">Visitar plataforma</a>
+                        </li>
+                        <li><span>Ámbito:</span> Colombia</li>
+                        <li><span>Servicios:</span> Datting / Match</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- DESCRIPCIÓN -->
+            <div class="col-lg-8">
+                <div class="title-area mb-35">
+                    <h2 class="sec-title">OngoMatch – Conecta personas en tiempo real dentro de discotecas</h2>
+
+                    <p class="sec-text mt-30">
+                        OngoMatch es una aplicación creada para que las personas puedan conocerse dentro de un mismo
+                        local nocturno
+                        o discoteca, conectando a usuarios que están físicamente en el mismo lugar.
+                    </p>
+
+                    <p class="sec-text mt-30">
+                        Incluye registro de usuarios, ver quién está presente en el local, envío de regalos virtuales,
+                        pagos en línea
+                        y chat en vivo entre asistentes.
+                    </p>
+                </div>
+
+                <h3>Reto y Solución</h3>
+                <p class="sec-text mb-n1">
+                    Se necesitaba una plataforma segura, dinámica y muy rápida que permitiera identificar usuarios en el
+                    mismo espacio,
+                    gestionar interacción en tiempo real y procesar pagos sin fricción.
+                </p>
+                <p class="sec-text mb-n1">
+                    Se implementó Node.js + Express.js + TypeScript + Angular + Firebase + Stripe + geolocalización,
+                    permitiendo autenticación segura, presencia en tiempo real, chat instantáneo y compra de regalos
+                    digitales.
+                </p>
+
+                <h3 class="mt-35">Resultado Final</h3>
+                <p class="sec-text mb-n1">Sistema de presencia en tiempo real para mostrar quién está en la misma
+                    discoteca.</p>
+                <p class="sec-text mb-n1">Chat en vivo con usuarios del mismo local.</p>
+                <p class="sec-text mb-n1">Regalos virtuales y pagos integrados con Stripe.</p>
+                <p class="sec-text mb-n1">Panel administrativo para discotecas y control de actividad.</p>
+            </div>
+
+
+
+            <!-- NAVEGACIÓN -->
+            <div class="col-lg-12">
+                <div class="inner__page-nav space-top mt-n1 mb-n1">
+                    <a href="project-details.html?id=tecnicos" class="nav-btn">
+                        <i class="fa fa-arrow-left"></i>
+                        <span><span class="link-effect">
+                                <span class="effect-1">ANTERIOR PROYECTO</span>
+                                <span class="effect-1">ANTERIOR PROYECTO</span>
+                            </span></span>
+                    </a>
+
+                    <a href="project-details.html?id=tecnicos" class="nav-btn">
+                        <span><span class="link-effect">
+                                <span class="effect-1">PRÓXIMO PROYECTO</span>
+                                <span class="effect-1">PRÓXIMO PROYECTO</span>
+                            </span></span>
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Swiper Initialization -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('.project-swiper', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            }
+        });
+    });
+</script>

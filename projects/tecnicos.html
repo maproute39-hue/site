@@ -1,0 +1,112 @@
+
+<!-- Swiper CSS (obligatorio) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Swiper JS (obligatorio) -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<div class="project-details-page-area space">
+    <div class="container">
+
+        <!-- GALERÍA PRINCIPAL -->
+      <div class="swiper project-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="project-inner-thumb mb-80">
+        <img class="w-100" src="projects/images/reparador_1.png " alt="Tu Reparador dashboard">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="project-inner-thumb mb-80">
+        <img class="w-100" src="projects/images/reparador_2.png" alt="Tu Reparador app móvil">
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+        <div class="row justify-content-between flex-row-reverse">
+
+            <div class="col-xl-3 col-lg-4">
+                <div class="project-details-info mb-lg-0 mb-40">
+                  <ul class="list-wrap">
+                    <li><span>Categoría:</span> Servicios Técnicos</li>
+                    <li><span>Tecnologías:</span> HTML, CSS, JS, Bootstrap</li>
+                    <li><span>Cliente:</span> Tu Reparador</li>
+                    <li><span>Fecha:</span> 2024 – 2025</li>
+                    <li><span>Estado:</span> <strong style="color:#0cc067;">En Producción</strong></li>
+                    <li><span>Ámbito:</span> Latinoamérica</li>
+                    <li><span>Servicios:</span> Electricidad, plomería, carpintería, pintura y más</li>
+                  </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="title-area mb-35">
+                    <h2 class="sec-title">Tu Reparador – Marketplace de Técnicos</h2>
+
+                    <p class="sec-text mt-30">
+                        Plataforma para conectar expertos con clientes que requieren servicios técnicos.
+                    </p>
+
+                    <p class="sec-text mt-30">
+                        Incluye validación, perfiles, calificaciones, portafolio, notificaciones y más.
+                    </p>
+                </div>
+
+                <h3>Reto y Solución</h3>
+                <p class="sec-text mb-n1">Desarrollar un marketplace rápido y confiable para expertos técnicos.</p>
+                <p class="sec-text mb-n1">Se construyó una arquitectura ligera y escalable lista para expansión geográfica.</p>
+
+                <h3 class="mt-35">Resultado Final</h3>
+                <p class="sec-text mb-n1">+2400 expertos verificados.</p>
+                <p class="sec-text mb-n1">Flujos claros y eficientes para clientes y especialistas.</p>
+                <p class="sec-text mb-n1">Plataforma lista para integrar pagos y app móvil.</p>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="inner__page-nav space-top mt-n1 mb-n1">
+                    <a href="project-details.html?id=ecobikes" class="nav-btn">
+                        <i class="fa fa-arrow-left"></i>
+                        <span><span class="link-effect">
+                            <span class="effect-1">ANTERIOR PROYECTO</span>
+                            <span class="effect-1">ANTERIOR PROYECTO</span>
+                        </span></span>
+                    </a>
+
+                    <a href="project-details.html?id=ecobikes" class="nav-btn">
+                        <span><span class="link-effect">
+                            <span class="effect-1">PRÓXIMO PROYECTO</span>
+                            <span class="effect-1">PRÓXIMO PROYECTO</span>
+                        </span></span>
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Swiper Initialization -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    new Swiper('.project-swiper', {
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        }
+    });
+});
+</script>

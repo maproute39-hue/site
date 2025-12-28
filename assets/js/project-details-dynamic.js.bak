@@ -1,0 +1,372 @@
+/**
+ * Project Details Dynamic Loader
+ * Carga y muestra los detalles de un proyecto específico desde projects.json
+ */
+
+(function($) {
+    'use strict';
+
+    // Estado global
+    let allProjects = [];
+    let currentProject = null;
+    let currentProjectIndex = -1;
+
+    // Elementos del DOM
+    let $loadingSpinner;
+    let $errorMessage;
+    let $projectContent;
+
+    /**
+     * Inicialización
+     */
+    function init() {
+        cacheElements();
+        loadProjectDetails();
+    }
+
+    /**
+     * Cache de elementos del DOM
+     */
+    function cacheElements() {
+        $loadingSpinner = $('#loading-spinner');
+        $errorMessage = $('#error-message');
+        $projectContent = $('#project-content');
+    }
+
+    /**
+     * Cargar detalles del proyecto
+     */
+    function loadProjectDetails() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const projectId = urlParams.get('id');
+
+        if (!projectId) {
+            showError('No se especificó ID de proyecto');
+            return;
+        }
+
+        showLoading(true);
+
+        // Cargar todos los proyectos
+        $.ajax({
+            url: 'assets/data/projects.json',
+            method: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                allProjects = data;
+                findAndDisplayProject(projectId);
+                showLoading(false);
+            },
+            error: function(xhr, status, error) {
+                console.error('Error loading projects:', error);
+                showError('Error al cargar los datos del proyecto');
+                showLoading(false);
+            }
+        });
+    }
+
+    /**
+     * Encontrar y mostrar proyecto específico
+     */
+    function findAndDisplayProject(projectId) {
+        currentProjectIndex = allProjects.findIndex(p => p.id == projectId);
+        
+        if (currentProjectIndex === -1) {
+            showError('Proyecto no encontrado');
+            return;
+        }
+
+        currentProject = allProjects[currentProjectIndex];
+        displayProjectDetails();
+        updateDocumentTitle();
+        updateNavigation();
+        loadRelatedProjects();
+    }
+
+    /**
+     * Mostrar detalles del proyecto
+     */
+    function displayProjectDetails() {
+        // Actualizar breadcrumb
+        $('#breadcrumb-title').text(currentProject.title);
+
+        // Información principal
+        $('#project-type').text(currentProject.type);
+        $('#project-service').text(currentProject.service);
+        $('#project-date').text(formatDate(currentProject.date));
+        $('#project-title').text(currentProject.title);
+        $('#project-subtitle').text(currentProject.subtitle);
+        $('#project-description').text(currentProject.description);
+
+        // Imagen principal
+        $('#project-hero-image').attr('src', currentProject.image).attr('alt', currentProject.title);
+
+        // Secciones del proyecto
+        if (currentProject.sections) {
+            $('#project-overview').text(currentProject.sections.overview || 'No especificado');
+            $('#project-challenge').text(currentProject.sections.challenge || 'No especificado');
+            $('#project-solution').text(currentProject.sections.solution || 'No especificado');
+            $('#project-final-result').text(currentProject.sections.final_result || 'No especificado');
+        }
+
+        // Galería
+        displayGallery();
+
+        // Sidebar - Información del proyecto
+        $('#project-client').text(currentProject.client);
+        $('#project-date-formatted').text(formatDate(currentProject.date));
+        $('#project-categories').text(currentProject.categories.join(', '));
+        $('#project-service-sidebar').text(currentProject.service);
+
+        // Tecnologías
+        displayTechnologies();
+
+        // Mostrar contenido
+        $projectContent.show();
+    }
+
+    /**
+     * Mostrar galería de imágenes
+     */
+    function displayGallery() {
+        const $gallery = $('#project-gallery');
+        $gallery.empty();
+
+        if (currentProject.gallery && currentProject.gallery.length > 0) {
+            currentProject.gallery.forEach((imagePath, index) => {
+                const imageElement = $(`
+                    <div class="col-md-4 mb-3">
+                        <div class="gallery-item">
+                            <a href="${imagePath}" class="gallery-link" data-gallery="project-gallery">
+                                <img src="${imagePath}" alt="${currentProject.title} - Imagen ${index + 1}" 
+                                     class="img-fluid rounded" style="width: 100%; height: 250px; object-fit: cover;">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                `);
+                $gallery.append(imageElement);
+            });
+        } else {
+            // Si no hay galería, usar imagen principal
+            $gallery.html(`
+                <div class="col-12">
+                    <div class="text-center">
+                        <img src="${currentProject.image}" alt="${currentProject.title}" 
+                             class="img-fluid rounded" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+            `);
+        }
+
+        // Inicializar magnific popup para la galería
+        setTimeout(() => {
+            if (typeof $.fn.magnificPopup !== 'undefined') {
+                $('.gallery-link').magnificPopup({
+                    type: 'image',
+                    gallery: {
+                        enabled: true
+                    }
+                });
+            }
+        }, 100);
+    }
+
+    /**
+     * Mostrar tecnologías utilizadas
+     */
+    function displayTechnologies() {
+        const $techContainer = $('#project-technologies');
+        $techContainer.empty();
+
+        currentProject.software.forEach(tech => {
+            const badge = $(`<span class="badge bg-primary">${tech}</span>`);
+            $techContainer.append(badge);
+        });
+    }
+
+    /**
+     * Actualizar título del documento
+     */
+    function updateDocumentTitle() {
+        document.title = `${currentProject.title} - Buckapi`;
+        
+        // Actualizar meta descripción
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute('content', currentProject.description);
+        }
+    }
+
+    /**
+     * Actualizar navegación (anterior/siguiente)
+     */
+    function updateNavigation() {
+        const $prevBtn = $('#prev-project');
+        const $nextBtn = $('#next-project');
+
+        // Proyecto anterior
+        if (currentProjectIndex > 0) {
+            const prevProject = allProjects[currentProjectIndex - 1];
+            $prevBtn.show().attr('href', `project-details.html?id=${prevProject.id}`);
+            $prevBtn.html(`<i class="fas fa-arrow-left"></i> ${prevProject.title}`);
+        }
+
+        // Proyecto siguiente
+        if (currentProjectIndex < allProjects.length - 1) {
+            const nextProject = allProjects[currentProjectIndex + 1];
+            $nextBtn.show().attr('href', `project-details.html?id=${nextProject.id}`);
+            $nextBtn.html(`${nextProject.title} <i class="fas fa-arrow-right"></i>`);
+        }
+    }
+
+    /**
+     * Cargar proyectos relacionados
+     */
+    function loadRelatedProjects() {
+        const relatedContainer = $('#related-projects');
+        relatedContainer.empty();
+
+        // Encontrar proyectos relacionados por tipo o categorías
+        const relatedProjects = allProjects
+            .filter((p, index) => 
+                index !== currentProjectIndex && 
+                (p.type === currentProject.type || 
+                 p.categories.some(cat => currentProject.categories.includes(cat)))
+            )
+            .slice(0, 3); // Mostrar máximo 3 relacionados
+
+        if (relatedProjects.length === 0) {
+            relatedContainer.html('<p class="text-muted">No hay proyectos relacionados.</p>');
+            return;
+        }
+
+        relatedProjects.forEach(project => {
+            const projectCard = $(`
+                <div class="related-project-item mb-3">
+                    <div class="d-flex align-items-center">
+                        <img src="${project.image}" alt="${project.title}" 
+                             class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                        <div>
+                            <h6 class="mb-1">
+                                <a href="project-details.html?id=${project.id}" class="text-decoration-none">
+                                    ${project.title}
+                                </a>
+                            </h6>
+                            <small class="text-muted">${project.type}</small>
+                        </div>
+                    </div>
+                </div>
+            `);
+            relatedContainer.append(projectCard);
+        });
+    }
+
+    /**
+     * Formatear fecha
+     */
+    function formatDate(dateString) {
+        const options = { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+        };
+        return new Date(dateString).toLocaleDateString('es-ES', options);
+    }
+
+    /**
+     * Mostrar/ocultar loading spinner
+     */
+    function showLoading(show) {
+        if (show) {
+            $loadingSpinner.show();
+            $errorMessage.hide();
+            $projectContent.hide();
+        } else {
+            $loadingSpinner.hide();
+        }
+    }
+
+    /**
+     * Mostrar mensaje de error
+     */
+    function showError(message) {
+        $loadingSpinner.hide();
+        $projectContent.hide();
+        $errorMessage.show();
+        
+        if (message) {
+            const errorText = $errorMessage.find('p');
+            if (errorText.length > 0) {
+                errorText.text(message);
+            }
+        }
+    }
+
+    /**
+     * Compartir en redes sociales
+     */
+    function shareProject(platform) {
+        const url = encodeURIComponent(window.location.href);
+        const title = encodeURIComponent(currentProject.title);
+        const description = encodeURIComponent(currentProject.description);
+
+        let shareUrl = '';
+
+        switch (platform) {
+            case 'facebook':
+                shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+                break;
+            case 'twitter':
+                shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
+                break;
+            case 'linkedin':
+                shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+                break;
+            case 'whatsapp':
+                shareUrl = `https://wa.me/?text=${title}%20${url}`;
+                break;
+        }
+
+        if (shareUrl) {
+            window.open(shareUrl, '_blank', 'width=600,height=400');
+        }
+    }
+
+    /**
+     * Inicializar lightbox para galería
+     */
+    function initLightbox() {
+        $('.gallery-item').on('click', function(e) {
+            e.preventDefault();
+            const imageUrl = $(this).find('img').attr('src');
+            // Aquí se puede implementar un lightbox personalizado
+            window.open(imageUrl, '_blank');
+        });
+    }
+
+    /**
+     * Imprimir página
+     */
+    function printProject() {
+        window.print();
+    }
+
+    // Exponer funciones globales
+    window.projectDetails = {
+        shareProject,
+        printProject,
+        initLightbox
+    };
+
+    // Inicializar cuando el DOM esté listo
+    $(document).ready(function() {
+        init();
+        
+        // Inicializar lightbox después de que las imágenes se carguen
+        setTimeout(initLightbox, 500);
+    });
+
+})(jQuery);

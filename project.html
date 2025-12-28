@@ -1,0 +1,684 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Buckapi</title>
+    <meta name="description" content="Buckapi - Creative Agency & Portfolio HTML Template">
+    <meta name="keywords" content="Buckapi - Creative Agency & Portfolio HTML Template">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--==============================
+	  Google Fonts
+	============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Unbounded:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+
+    <!--==============================
+	    All CSS File
+	============================== -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/imageRevealHover.css">
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <!--********************************
+   		Code Start From Here
+	******************************** -->
+
+    <!--==============================
+     Preloader
+    ==============================-->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="popup-search-box">
+        <button class="searchClose"><img src="assets/img/icon/close.svg" alt="img"></button>
+        <form action="project.html#">
+            <input type="text" placeholder="Search Here..">
+            <button type="submit"><img src="assets/img/icon/search-white.svg" alt="img"></button>
+        </form>
+    </div>
+
+
+    <div class="sidemenu-wrapper">
+        <div class="sidemenu-content" style="background-color: #1365cf;">
+            <button class="closeButton sideMenuCls"><img src="assets/img/icon/close.svg" alt="icon"></button>
+            <div class="widget footer-widget">
+                <div class="contact-form-wrap">
+                    <div class="title-area mb-30">
+                        <h2 class="sec-title" style="color: #fff">¿Tienes un proyecto en mente?</h2>
+                        <p style="color: #fff">Selecciona el tipo de proyecto y cuéntanos tu idea.</p>
+                    </div>
+
+                    <!-- GRID SELECTOR -->
+                    <div class="project-type-grid mb-4">
+                        <label class="project-option">
+                            <input type="radio" name="project_type" value="Sitio Web">
+                            <div class="box">
+                                <i class="fas fa-globe"></i>
+                                <span>Sitio Web</span>
+                            </div>
+                        </label>
+
+                        <label class="project-option">
+                            <input type="radio" name="project_type" value="App Móvil">
+                            <div class="box">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>App Móvil</span>
+                            </div>
+                        </label>
+
+                        <label class="project-option">
+                            <input type="radio" name="project_type" value="App Web">
+                            <div class="box">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>App Web / Plataforma</span>
+                            </div>
+                        </label>
+
+                        <label class="project-option">
+                            <input type="radio" name="project_type" value="Otro">
+                            <div class="box">
+                                <i class="fas fa-th-large"></i>
+                                <span>Otros</span>
+                            </div>
+                        </label>
+                    </div>
+
+                    <!-- FORMULARIO -->
+                    <form action="https://html.themegenix.com/frisk/mail.php" method="POST"
+                        class="contact-form ajax-contact">
+
+                        <input type="hidden" id="projectTypeHidden" name="project_type">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control style-border" name="name"
+                                        placeholder="Nombre completo*" style="color: #fff !important;">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control style-border" name="email"
+                                        placeholder="Correo electrónico*">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control style-border" name="website"
+                                        placeholder="Link de referencia (opcional)">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control style-border"
+                                        placeholder="Cuéntanos sobre tu idea*"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-btn col-12">
+                            <button type="submit" class="btn mt-20">
+                                <span class="link-effect">
+                                    <span class="effect-1">ENVIAR MENSAJE</span>
+                                    <span class="effect-1">ENVIAR MENSAJE</span>
+                                </span>
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <!-- <div class="d-flex justify-content-end">
+                <a href="contact.html" class="chat-btn gsap-magnetic">Let's Talk with us</a>
+            </div> -->
+        </div>
+    </div>
+    <!--==============================
+    Mobile Menu
+    ============================== -->
+    <div class="mobile-menu-wrapper">
+        <div class="mobile-menu-area">
+            <button class="menu-toggle"><i class="fas fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="index.html"><img src="assets/img/logo.svg" alt="Ovation"></a>
+            </div>
+            <div class="mobile-menu">
+                <ul>
+
+                    <li>
+                        <a href="contact.html">Sitios web</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Apps moviles</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Aplicaciones Web Progresivas</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-wrap">
+                <h6>27 Division St, New York,</h6>
+                <h6>NY 10002, USA</h6>
+            </div>
+            <div class="sidebar-wrap">
+                <h6><a href="tel:1800123654987">+1 800 123 654 987 </a></h6>
+                <h6><a href="/cdn-cgi/l/email-protection#e482968d978fca8583818a879da489858d88ca878b89"><span
+                            class="__cf_email__"
+                            data-cfemail="82e4f0ebf1e9ace3e5e7ece1fbc2efe3ebeeace1edef">[email&#160;protected]</span></a>
+                </h6>
+            </div>
+            <div class="social-btn style3">
+                <a href="https://www.facebook.com/">
+                    <span class="link-effect">
+                        <span class="effect-1"><i class="fab fa-facebook"></i></span>
+                        <span class="effect-1"><i class="fab fa-facebook"></i></span>
+                    </span>
+                </a>
+                <a href="https://instagram.com/">
+                    <span class="link-effect">
+                        <span class="effect-1"><i class="fab fa-instagram"></i></span>
+                        <span class="effect-1"><i class="fab fa-instagram"></i></span>
+                    </span>
+                </a>
+                <a href="https://twitter.com/">
+                    <span class="link-effect">
+                        <span class="effect-1"><i class="fab fa-twitter"></i></span>
+                        <span class="effect-1"><i class="fab fa-twitter"></i></span>
+                    </span>
+                </a>
+                <a href="https://dribbble.com/">
+                    <span class="link-effect">
+                        <span class="effect-1"><i class="fab fa-dribbble"></i></span>
+                        <span class="effect-1"><i class="fab fa-dribbble"></i></span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+	Header Area
+    ==============================-->
+    <header class="nav-header header-layout3 bg-white">
+        <div class="sticky-wrapper">
+            <!-- Main Menu Area -->
+            <div class="menu-area">
+                <div class="container-fluid">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto">
+                            <div class="header-logo">
+                                <a href="index.html"><img src="https://www.buckapi.site/images/logo/logoNew.png"
+                                        style="max-width: 60PX;"></a>
+                            </div>
+                        </div>
+                        <div class="col-auto ms-auto">
+                            <nav class="main-menu d-none d-lg-inline-block">
+                                <ul>
+                                    <li>
+                                        <a href="project.html?project_type=Sitios Web">
+                                            <span class="link-effect">
+                                                <span class="effect-1">SITIOS WEB</span>
+                                                <span class="effect-1">SITIOS WEB</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="project.html?project_type=Apps Moviles">
+                                            <span class="link-effect">
+                                                <span class="effect-1">APPS MOVILES</span>
+                                                <span class="effect-1">APPS MOVILES</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="project.html?project_type=Aplicaciones Web Progresivas">
+                                            <span class="link-effect">
+                                                <span class="effect-1">APLICACIONES WEB PROGRESIVAS</span>
+                                                <span class="effect-1">APLICACIONES WEB PROGRESIVAS</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="navbar-right d-inline-flex d-lg-none">
+                                <button type="button" class="menu-toggle sidebar-btn">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <div class="header-button">
+                                <a class="btn  sideMenuToggler" style="background-color: #0866FF;">
+                                    <span class="link-effect">
+                                        <span class="effect-1 ">TRABAJEMOS JUNTOS</span>
+                                        <span class="effect-1">TRABAJEMOS JUNTOS</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--==============================
+        Portfolio Area
+    ==============================-->
+    <div class="portfolio-area-1 space overflow-hidden pt-70">
+        <div class="container">
+            <div class="row justify-content-between masonary-active">
+                <!-- ECOBIKES -->
+                <div class="col-lg-6 filter-item mt-50">
+                    <div class="portfolio-wrap mt-lg-140">
+                        <div class="portfolio-thumb" style="border-radius: 15px;">
+                            <a href="project-details.html?id=ecobikes" >
+                                <img src="assets/img/portfolio/portfolio1_1.jpg" alt="Ecobikes">
+                            </a>
+                        </div>
+                        <div class="portfolio-details">
+                            <ul class="portfolio-meta">
+                                <li><a href="blog.html">Logística</a></li>
+                                <li><a href="blog.html">Chile</a></li>
+                            </ul>
+                            <h3 class="portfolio-title"><a href="project-details.html?id=ecobikes">Ecobikes – Plataforma
+                                    logística sostenible</a></h3>
+                            <a href="project-details.html?id=ecobikes" class="link-btn">
+                                <span class="link-effect">
+                                    <span class="effect-1">VER PROYECTO</span>
+                                    <span class="effect-1">VER PROYECTO</span>
+                                </span>
+                                <img src="assets/img/icon/arrow-left-top.svg" alt="icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- VIA-Z -->
+                <div class="col-lg-6 filter-item">
+                    <div class="portfolio-wrap mt-140 mt-lg-0">
+                        <div class="portfolio-thumb" style="border-radius: 15px;">
+                            <a href="project-details.html?id=via-z">
+                                <img src="assets/img/portfolio/portfolio1_2.jpg" alt="Via-Z">
+                            </a>
+                        </div>
+                        <div class="portfolio-details">
+                            <ul class="portfolio-meta">
+                                <li><a >Transporte</a></li>
+                                <li><a >México</a></li>
+                            </ul>
+                            <h3 class="portfolio-title"><a href="project-details.html?id=viaz">Via-Z – Plataforma de reservas y
+                                    transporte</a></h3>
+                            <a href="project-details.html?id=viaz" class="link-btn">
+                                <span class="link-effect">
+                                    <span class="effect-1">VER PROYECTO</span>
+                                    <span class="effect-1">VER PROYECTO</span>
+                                </span>
+                                <img src="assets/img/icon/arrow-left-top.svg" alt="icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- TECNICOS Y REPARACION -->
+                <div class="col-lg-7 filter-item">
+                    <div class="portfolio-wrap mt-140">
+                        <div class="portfolio-thumb" style="border-radius: 15px;">
+                            <a href="project-details.html?id=reparacion">
+                                <img src="assets/img/portfolio/reparador.jpg" alt="MariosReparación">
+                            </a>
+                        </div>
+                        <div class="portfolio-details">
+                            <ul class="portfolio-meta">
+                                <li><a >Servicios Técnicos</a></li>
+                                <li><a >Colombia</a></li>
+                            </ul>
+                            <h3 class="portfolio-title"><a href="project-details.html?id=reparacion">Tecnicos y reparacion –
+                                    Plataforma de servicios técnicos y arreglos</a></h3>
+                            <a href="project-details.html?id=reparacion" class="link-btn">
+                                <span class="link-effect">
+                                    <span class="effect-1">VER PROYECTO</span>
+                                    <span class="effect-1">VER PROYECTO</span>
+                                </span>
+                                <img src="assets/img/icon/arrow-left-top.svg" alt="icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- GESGAN -->
+                <div class="col-lg-5 filter-item">
+                    <div class="portfolio-wrap mt-140">
+                        <div class="portfolio-thumb" style="border-radius: 15px;">
+                            <a href="project-details.html?id=gesgan">
+                                <img src="assets/img/portfolio/portfolio1_6.png" alt="GESGAN">
+                            </a>
+                        </div>
+                        <div class="portfolio-details">
+                            <ul class="portfolio-meta">
+                                <li><a >ERP</a></li>
+                                <li><a >Latam</a></li>
+                            </ul>
+                            <h3 class="portfolio-title"><a href="project-details.html?id=gesgan">GESGAN – ERP de gestión para
+                                    ganado</a></h3>
+                            <a href="project-details.html?id=gesgan" class="link-btn">
+                                <span class="link-effect">
+                                    <span class="effect-1">VER PROYECTO</span>
+                                    <span class="effect-1">VER PROYECTO</span>
+                                </span>
+                                <img src="assets/img/icon/arrow-left-top.svg" alt="icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- FITOSALUD -->
+                <div class="col-lg-7 filter-item">
+                    <div class="portfolio-wrap mt-140">
+                        <div class="portfolio-thumb" style="border-radius: 15px;">
+                            <a href="project-details.html?id=fitoapp">
+                                <img src="assets/img/portfolio/fitoapp.jpg" alt="FitoSalud">
+                            </a>
+                        </div>
+                        <div class="portfolio-details">
+                            <ul class="portfolio-meta">
+                                <li><a >Marketplace Salud</a></li>
+                                <li><a >Latam</a></li>
+                            </ul>
+                            <h3 class="portfolio-title"><a href="project-details.html?id=fitoapp">FitoApp – Marketplace de salud
+                                    y bienestar</a></h3>
+                            <a href="project-details.html?id=fitoapp" class="link-btn">
+                                <span class="link-effect">
+                                    <span class="effect-1">VER PROYECTO</span>
+                                    <span class="effect-1">VER PROYECTO</span>
+                                </span>
+                                <img src="assets/img/icon/arrow-left-top.svg" alt="icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ALTO DE PROPIEDAD -->
+                <div class="col-lg-5 filter-item">
+                    <div class="portfolio-wrap mt-140">
+                        <div class="portfolio-thumb" style="border-radius: 15px;">
+                            <a href="project-details.html">
+                                <img src="assets/img/portfolio/portfolio1_4.jpg" alt="Alto de Propiedad">
+                            </a>
+                        </div>
+                        <div class="portfolio-details">
+                            <ul class="portfolio-meta">
+                                <li><a href="blog.html">Inmobiliaria</a></li>
+                                <li><a href="blog.html">Colombia</a></li>
+                            </ul>
+                            <h3 class="portfolio-title"><a href="project-details.html">Alto de Propiedad – Portal de
+                                    bienes raíces</a></h3>
+                            <a href="project-details.html" class="link-btn">
+                                <span class="link-effect">
+                                    <span class="effect-1">VER PROYECTO</span>
+                                    <span class="effect-1">VER PROYECTO</span>
+                                </span>
+                                <img src="assets/img/icon/arrow-left-top.svg" alt="icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ongo -->
+                <div class="col-lg-5 filter-item">
+                    <div class="portfolio-wrap mt-140">
+                        <div class="portfolio-thumb" style="border-radius: 15px;">
+                            <a href="project-details.html">
+                                <img src="assets/img/portfolio/portfolio1_4.jpg" alt="Alto de Propiedad">
+                            </a>
+                        </div>
+                        <div class="portfolio-details">
+                            <ul class="portfolio-meta">
+                                <li><a >ONGO</a></li>
+                                <li><a >Colombia</a></li>
+                            </ul>
+                            <h3 class="portfolio-title"><a href="project-details.html?id=ongo">Ongo – aplicación movil de citas y promoción de locales nocturnos</a></h3>
+                            <a href="project-details.html?id=ongo" class="link-btn">
+                                <span class="link-effect">
+                                    <span class="effect-1">VER PROYECTO</span>
+                                    <span class="effect-1">VER PROYECTO</span>
+                                </span>
+                                <img src="assets/img/icon/arrow-left-top.svg" alt="icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-wrap justify-content-center mt-60">
+                <a class="btn" href="project-2.html">
+                    <span class="link-effect">
+                        <span class="effect-1">CARGAR MÁS</span>
+                        <span class="effect-1">CARGAR MÁS</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--==============================
+    Marquee Area
+    ==============================-->
+    <div class="container-fluid p-0 overflow-hidden">
+        <div class="slider__marquee clearfix marquee-wrap">
+            <div class="marquee_mode marquee__group">
+                <h6 class="item m-item"><a href="project.html#"><i class="fas fa-star-of-life"></i> Angular</a></h6>
+                <h6 class="item m-item"><a href="project.html#"><i class="fas fa-star-of-life"></i> Pocketbase</a></h6>
+                <h6 class="item m-item"><a href="project.html#"><i class="fas fa-star-of-life"></i> API</a></h6>
+                <h6 class="item m-item"><a href="project.html#"><i class="fas fa-star-of-life"></i> Node.js</a></h6>
+                <h6 class="item m-item"><a href="project.html#"><i class="fas fa-star-of-life"></i> Python</a></h6>
+                <h6 class="item m-item"><a href="project.html#"><i class="fas fa-star-of-life"></i> React</a></h6>
+                <h6 class="item m-item"><a href="project.html#"><i class="fas fa-star-of-life"></i> Laravel</a></h6>
+                <h6 class="item m-item"><a href="project.html#"><i class="fas fa-star-of-life"></i> MySQL</a></h6>
+                <h6 class="item m-item"><a href="project.html#"><i class="fas fa-star-of-life"></i> MongoDB</a></h6>
+            </div>
+        </div>
+    </div>
+
+    <!--==============================
+        Footer Area
+    ==============================-->
+    <footer class="footer-wrapper footer-layout2 overflow-hidden">
+        <div class="container">
+            <div class="widget-area space-top">
+                <div class="row justify-content-between">
+                    <div class="col-md-6 col-xl-5 col-lg-6">
+                        <div class="widget widget-newsletter footer-widget">
+                            <h3 class="widget_title">Para comunicarte directamente con nosotros</h3>
+                            <form class="newsletter-form">
+                                <div class="form-group">
+                                    <input class="form-control" type="email" placeholder="Escribe tu mensaje aqui"
+                                        required="">
+                                </div>
+                                <button type="submit" class="btn"><img src="assets/img/icon/arrow-left-top.svg"
+                                        alt=""></button>
+                            </form>
+                            <p>vía Whatsapp.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-auto col-lg-4">
+                        <div class="widget footer-widget widget-contact">
+                            <h3 class="widget_title">Contáctanos</h3>
+                            <ul class="contact-info-list">
+                                <li>
+                                    <a href="tel:1800123654987">+57 324 757 4928</a>
+                                    <a href="mailto:frisk.agency@mail.com">contacto@buckapi.site</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright-wrap">
+                <div class="row gy-3 justify-content-between align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright-text">Copyright © 2025
+                            <a href="https://themeforest.net/user/themegenix">Buckapi</a>
+                        </p>
+
+                    </div>
+                    <div class="col-md-6 align-self-center">
+                        <div class="social-btn style3 justify-content-md-end">
+                            <a href="https://www.facebook.com/">
+                                <span class="link-effect">
+                                    <span class="effect-1"><i class="fab fa-facebook"></i></span>
+                                    <span class="effect-1"><i class="fab fa-facebook"></i></span>
+                                </span>
+                            </a>
+                            <a href="https://instagram.com/">
+                                <span class="link-effect">
+                                    <span class="effect-1"><i class="fab fa-instagram"></i></span>
+                                    <span class="effect-1"><i class="fab fa-instagram"></i></span>
+                                </span>
+                            </a>
+                            <a href="https://twitter.com/">
+                                <span class="link-effect">
+                                    <span class="effect-1"><i class="fab fa-twitter"></i></span>
+                                    <span class="effect-1"><i class="fab fa-twitter"></i></span>
+                                </span>
+                            </a>
+                            <a href="https://dribbble.com/">
+                                <span class="link-effect">
+                                    <span class="effect-1"><i class="fab fa-dribbble"></i></span>
+                                    <span class="effect-1"><i class="fab fa-dribbble"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--********************************
+			Code End  Here
+	******************************** -->
+
+    <!-- Scroll To Top -->
+    <div class="scroll-top">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+            </path>
+        </svg>
+    </div>
+
+
+    <!-- Jquery -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/sticky-kit.min.js"></script>
+
+
+    <script src="assets/js/imageRevealHover.js"></script>
+    <script src="assets/js/jarallax.min.js"></script>
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/waypoints.js"></script>
+    <script src="assets/js/wow.js"></script>
+
+    <!-- Main Js File -->
+    <script src="assets/js/main.js"></script>
+    <style>
+        .contact-form .form-control::placeholder,
+        .contact-form textarea::placeholder {
+            color: #fff !important;
+            opacity: 1;
+        }
+
+        .contact-form .form-control,
+        .contact-form textarea {
+            color: #fff !important;
+        }
+    </style>
+    <style>
+        .project-type-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .project-option {
+            display: block;
+        }
+
+        .project-option input {
+            display: none;
+        }
+
+        .project-option .box {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all .25s ease;
+            background: #fff;
+        }
+
+        .project-option .box i {
+            font-size: 28px;
+            margin-bottom: 8px;
+            display: block;
+            color: #111;
+        }
+
+        .project-option .box:hover {
+            border-color: #000;
+        }
+
+        .project-option input:checked+.box {
+            border-color: #000;
+            background: #000;
+            color: #fff;
+        }
+
+        .project-option input:checked+.box i {
+            color: #fff;
+        }
+    </style>
+</body>
+
+</html>
