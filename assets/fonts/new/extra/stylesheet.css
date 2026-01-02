@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Rounded Mplus 1c';
+    src: url('RoundedMplus1c-ExtraBold.woff2') format('woff2'),
+        url('RoundedMplus1c-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7410 3900">
+  <!-- Franjas -->
+  <rect width="7410" height="3900" fill="#b22234"/>
+  <g fill="#fff">
+    <rect y="300" width="7410" height="300"/>
+    <rect y="900" width="7410" height="300"/>
+    <rect y="1500" width="7410" height="300"/>
+    <rect y="2100" width="7410" height="300"/>
+    <rect y="2700" width="7410" height="300"/>
+    <rect y="3300" width="7410" height="300"/>
+  </g>
+
+  <!-- Campo azul -->
+  <rect width="2964" height="2100" fill="#3c3b6e"/>
+
+  <!-- Estrellas -->
+  <g fill="#fff">
+    <!-- Se crea una estrella y se va replicando -->
+    <polygon id="star" points="70,0 91,45 140,52 105,86 113,134 70,112 27,134 35,86 0,52 49,45"/>
+
+    <!-- Filas de estrellas (11 columnas alternadas en 9 filas) -->
+    <g id="row">
+      <use href="#star"/>
+      <use href="#star" x="247"/>
+      <use href="#star" x="494"/>
+      <use href="#star" x="741"/>
+      <use href="#star" x="988"/>
+      <use href="#star" x="1235"/>
+      <use href="#star" x="1482"/>
+      <use href="#star" x="1729"/>
+      <use href="#star" x="1976"/>
+    </g>
+
+    <!-- Filas impares -->
+    <use href="#row" y="0"/>
+    <use href="#row" y="210"/>
+    <use href="#row" y="420"/>
+    <use href="#row" y="630"/>
+    <use href="#row" y="840"/>
+
+    <!-- Filas pares (desplazadas a la derecha) -->
+    <use href="#row" x="123.5" y="105"/>
+    <use href="#row" x="123.5" y="315"/>
+    <use href="#row" x="123.5" y="525"/>
+    <use href="#row" x="123.5" y="735"/>
+  </g>
+</svg>

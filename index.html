@@ -1,696 +1,1600 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="es" dir="ltr">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Buckapi - Agencia Creativa Digital</title>
-    <meta name="description" content="Buckapi - Agencia Creativa Digital">
-    <meta name="keywords" content="Buckapi - Agencia Creativa Digital">
+    <title>Buckapi - Plantilla HTML de Integración de IA y Automatización - Inicio I (Startup de IA)</title>
+    <meta name="author" content="Buckapi">
+    <meta name="description" content="Buckapi - Plantilla HTML de Integración de IA y Automatización">
+    <meta name="keywords" content="Buckapi - Plantilla HTML de Integración de IA y Automatización">
     <meta name="robots" content="INDEX,FOLLOW">
-
-    <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
-    <!--==============================
-	  Google Fonts
-	============================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Unbounded:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap"
         rel="stylesheet">
-
-
-
-    <!--==============================
-	    All CSS File
-	============================== -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-    <link rel="stylesheet" href="assets/css/slick.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/imageRevealHover.css">
-    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="assets/css/app.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
 
 <body>
-    <!--********************************
-   		Code Start From Here
-	******************************** -->
-
-
-
-
-    <!--==============================
-     Preloader
-    ==============================-->
-    <div class="preloader">
+    <div class="preloader"><button class="th-btn preloaderCls">Cancelar Cargador</button>
         <div class="preloader-inner">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <div class="bounce"><img src="assets/img/logo-icon.svg" alt="img"></div><span class="loader">Buckapi <span
+                    class="loading-text logo-text">Buckapi</span></span>
         </div>
     </div>
-
-    <div class="popup-search-box">
-        <button class="searchClose"><img src="assets/img/icon/close.svg" alt="img"></button>
-        <form action="home-10.html#">
-            <input type="text" placeholder="Buscar aquí..">
-            <button type="submit"><img src="assets/img/icon/search-white.svg" alt="img"></button>
-        </form>
-    </div>
-
-    <div class="sidemenu-wrapper">
-        <div class="sidemenu-content" style="background-color: #1365cf;">
-            <button class="closeButton sideMenuCls"><img src="assets/img/icon/close.svg" alt="icon"></button>
-            <div class="widget footer-widget">
-                <div class="widget-about">
-                 
-                    <div class="contact-form-wrap">
-                        <div class="title-area mb-30">
-                            <h2 class="sec-title" style="color: #fff">¿Tienes un proyecto en mente?</h2>
-                            <p style="color: #fff">Selecciona el tipo de proyecto y cuéntanos tu idea.</p>
-                        </div>
-
-                        <!-- GRID SELECTOR -->
-                        <div class="project-type-grid mb-4">
-                            <label class="project-option">
-                                <input type="radio" name="project_type" value="Sitio Web">
-                                <div class="box">
-                                    <i class="fas fa-globe"></i>
-                                    <span>Sitio Web</span>
-                                </div>
-                            </label>
-
-                            <label class="project-option">
-                                <input type="radio" name="project_type" value="App Móvil">
-                                <div class="box">
-                                    <i class="fas fa-mobile-alt"></i>
-                                    <span>App Móvil</span>
-                                </div>
-                            </label>
-
-                            <label class="project-option">
-                                <input type="radio" name="project_type" value="App Web">
-                                <div class="box">
-                                    <i class="fas fa-laptop-code"></i>
-                                    <span>App Web / Plataforma</span>
-                                </div>
-                            </label>
-
-                            <label class="project-option">
-                                <input type="radio" name="project_type" value="Otro">
-                                <div class="box">
-                                    <i class="fas fa-th-large"></i>
-                                    <span>Otros</span>
-                                </div>
-                            </label>
-                        </div>
-
-                        <!-- FORMULARIO -->
-                        <form action="" method="POST" class="contact-form ajax-contact">
-
-                            <input type="hidden" id="projectTypeHidden" name="project_type">
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control style-border" name="name"
-                                            placeholder="Nombre completo*" style="color: #fff !important;">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control style-border" name="email"
-                                            placeholder="Correo electrónico*">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control style-border" name="website"
-                                            placeholder="Link de referencia (opcional)">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <textarea name="message" class="form-control style-border"
-                                            placeholder="Cuéntanos sobre tu idea*"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-btn col-12">
-                                <button type="submit" class="btn mt-20">
-                                    <span class="link-effect">
-                                        <span class="effect-1">ENVIAR MENSAJE</span>
-                                        <span class="effect-1">ENVIAR MENSAJE</span>
-                                    </span>
-                                </button>
-                            </div>
-
-                        </form>
-                    </div>
-
-                    <!-- <p class="about-text">Somos una agencia digital que ayuda a las empresas a desarrollar experiencias inmersivas y atractivas</p>
-                    <div class="sidebar-wrap">
-                        <h6>Av. 27 División, Nueva York,</h6>
-                        <h6>NY 10002, USA</h6>
-                        
-                    </div> -->
-                    <div class="sidebar-wrap">
-                        <h6><a href="tel:1800123654987">+1 800 123 654 987 </a></h6>
-                        <h6><a href="/cdn-cgi/l/email-protection#9ff9edf6ecf4b1fef8faf1fce6dff2fef6f3b1fcf0f2"><span
-                                    class="__cf_email__"
-                                    data-cfemail="0462766d776f2a6563616a677d4469656d682a676b69">[email&#160;protected]</span></a>
-                        </h6>
-                    </div>
-                    <div class="social-btn style2">
-                        <a href="https://www.facebook.com/">
-                            <span class="link-effect">
-                                <span class="effect-1"><i class="fab fa-facebook"></i></span>
-                                <span class="effect-1"><i class="fab fa-facebook"></i></span>
-                            </span>
-                        </a>
-                        <a href="https://instagram.com/">
-                            <span class="link-effect">
-                                <span class="effect-1"><i class="fab fa-instagram"></i></span>
-                                <span class="effect-1"><i class="fab fa-instagram"></i></span>
-                            </span>
-                        </a>
-                        <a href="https://twitter.com/">
-                            <span class="link-effect">
-                                <span class="effect-1"><i class="fab fa-twitter"></i></span>
-                                <span class="effect-1"><i class="fab fa-twitter"></i></span>
-                            </span>
-                        </a>
-                        <a href="https://dribbble.com/">
-                            <span class="link-effect">
-                                <span class="effect-1"><i class="fab fa-dribbble"></i></span>
-                                <span class="effect-1"><i class="fab fa-dribbble"></i></span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--==============================
-    Mobile Menu
-    ============================== -->
-    <div class="mobile-menu-wrapper">
-        <div class="mobile-menu-area">
-            <button class="menu-toggle"><i class="fas fa-times"></i></button>
-            <div class="mobile-logo">
-                <a href="index.html"><img src="assets/img/logo.svg" alt="Ovation"></a>
-            </div>
-            <div class="mobile-menu">
-                <ul>
-
-                    <li>
-                        <a href="contact.html">Contact</a>
+    <div class="th-menu-wrapper">
+        <div class="th-menu-area text-center"><button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo"><a href="index.html"><img src="assets/img/logo2.svg" alt="Buckapi"></a></div>
+            <div class="th-mobile-menu">
+                <ul class="allow-natural-scroll">
+                    <li class="menu-item-has-children"><a href="index.html">Inicio</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item-has-children"><a href="index.html#">Multipágina</a>
+                                <ul class="sub-menu">
+                                    <li><a href="index.html">Inicio I (Startup de IA)</a></li>
+                                    <li><a href="home-2.html">Inicio II (Tecnología de IA)</a></li>
+                                    <li><a href="home-3.html">Inicio III (Agencia de IA)</a></li>
+                                    <li><a href="home-4.html">Inicio IV (Generador de Imágenes IA)</a></li>
+                                    <li><a href="home-5.html">Inicio V (Solución IA)</a></li>
+                                    <li><a href="home-6.html">Inicio VI (Chatbot IA)</a></li>
+                                    <li><a href="home-7.html">Inicio VII (Generador de Perfiles IA)</a></li>
+                                    <li><a href="home-8.html">Inicio VIII (Escritura de Contenido IA)</a></li>
+                                    <li><a href="home-9.html">Inicio IX (Agente IA)</a></li>
+                                    <li><a href="home-10.html">Inicio X (Startup de IA 2)</a></li>
+                                    <li><a href="home-11.html">Inicio XI (IA en Salud)</a></li>
+                                    <li><a href="home-12.html">Inicio XII (Generador de Historias IA)</a></li>
+                                    <li><a href="home-13.html">Inicio XIII (Startup de IA 3)</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children"><a href="index.html#">Página Única</a>
+                                <ul class="sub-menu">
+                                    <li><a href="home-1-op.html">Inicio I (Startup de IA)</a></li>
+                                    <li><a href="home-2-op.html">Inicio II (Tecnología de IA)</a></li>
+                                    <li><a href="home-3-op.html">Inicio III (Agencia de IA)</a></li>
+                                    <li><a href="home-4-op.html">Inicio IV (Generador de Imágenes IA)</a></li>
+                                    <li><a href="home-5-op.html">Inicio V (Solución IA)</a></li>
+                                    <li><a href="home-6-op.html">Inicio VI (Chatbot IA)</a></li>
+                                    <li><a href="home-7-op.html">Inicio VII (Generador de Perfiles IA)</a></li>
+                                    <li><a href="home-8-op.html">Inicio VIII (Escritura de Contenido IA)</a></li>
+                                    <li><a href="home-9-op.html">Inicio IX (Agente IA)</a></li>
+                                    <li><a href="home-10-op.html">Inicio X (Startup de IA 2)</a></li>
+                                    <li><a href="home-11-op.html">Inicio XI (IA en Salud)</a></li>
+                                    <li><a href="home-12-op.html">Inicio XII (Generador de Historias IA)</a></li>
+                                    <li><a href="home-13-op.html">Inicio XIII (Startup de IA 3)</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children"><a href="index.html#">Sobre Nosotros</a>
+                        <ul class="sub-menu">
+                            <li><a href="about.html">Sobre Nosotros (Claro)</a></li>
+                            <li><a href="about-2.html">Sobre Nosotros (Oscuro)</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children"><a href="index.html#">Servicios</a>
+                        <ul class="sub-menu">
+                            <li><a href="service.html">Servicios (Claro)</a></li>
+                            <li><a href="service-2.html">Servicios (Oscuro)</a></li>
+                            <li><a href="service-details.html">Detalles del Servicio (Claro)</a></li>
+                            <li><a href="service-details-2.html">Detalles del Servicio (Oscuro)</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children"><a href="index.html#">Páginas</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item-has-children"><a href="index.html#">Tienda</a>
+                                <ul class="sub-menu">
+                                    <li><a href="shop.html">Tienda (Claro)</a></li>
+                                    <li><a href="shop-2.html">Tienda (Oscuro)</a></li>
+                                    <li><a href="shop-details.html">Detalles de Tienda (Claro)</a></li>
+                                    <li><a href="shop-details-2.html">Detalles de Tienda (Oscuro)</a></li>
+                                    <li><a href="cart.html">Página del Carrito (Claro)</a></li>
+                                    <li><a href="cart-2.html">Página del Carrito (Oscuro)</a></li>
+                                    <li><a href="checkout.html">Pago (Claro)</a></li>
+                                    <li><a href="checkout-2.html">Pago (Oscuro)</a></li>
+                                    <li><a href="wishlist.html">Lista de Deseos (Claro)</a></li>
+                                    <li><a href="wishlist-2.html">Lista de Deseos (Oscuro)</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children"><a href="index.html#">Proyectos</a>
+                                <ul class="sub-menu">
+                                    <li><a href="project.html">Proyecto (Claro)</a></li>
+                                    <li><a href="project-2.html">Proyecto (Oscuro)</a></li>
+                                    <li><a href="project-details.html">Detalles del Proyecto (Claro)</a></li>
+                                    <li><a href="project-details-2.html">Detalles del Proyecto (Oscuro)</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children"><a href="index.html#">Página de Equipo</a>
+                                <ul class="sub-menu">
+                                    <li><a href="team.html">Nuestro Equipo (Claro)</a></li>
+                                    <li><a href="team-2.html">Nuestro Equipo (Oscuro)</a></li>
+                                    <li><a href="team-details.html">Detalles del Equipo (Claro)</a></li>
+                                    <li><a href="team-details-2.html">Detalles del Equipo (Oscuro)</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="chatbot.html">Integración de Chatbot (Claro)</a></li>
+                            <li><a href="chatbot-2.html">Integración de Chatbot (Oscuro)</a></li>
+                            <li><a href="pricing.html">Precios (Claro)</a></li>
+                            <li><a href="pricing-2.html">Precios (Oscuro)</a></li>
+                            <li><a href="testimonial.html">Testimonios (Claro)</a></li>
+                            <li><a href="testimonial-2.html">Testimonios (Oscuro)</a></li>
+                            <li><a href="faq.html">Página de Preguntas Frecuentes (Claro)</a></li>
+                            <li><a href="faq-2.html">Página de Preguntas Frecuentes (Oscuro)</a></li>
+                            <li><a href="ai-consulting.html">Consultoría de IA (Claro)</a></li>
+                            <li><a href="ai-consulting-2.html">Consultoría de IA (Oscuro)</a></li>
+                            <li><a href="error.html">Página de Error (Claro)</a></li>
+                            <li><a href="error-2.html">Página de Error (Oscuro)</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children"><a href="index.html#">Blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="blog.html">Blog Estándar (Claro)</a></li>
+                            <li><a href="blog-3.html">Blog Estándar (Oscuro)</a></li>
+                            <li><a href="blog-2.html">Blog de Cuadrícula (Claro)</a></li>
+                            <li><a href="blog-4.html">Blog de Cuadrícula (Oscuro)</a></li>
+                            <li><a href="blog-details.html">Detalles del Blog (Claro)</a></li>
+                            <li><a href="blog-details-2.html">Detalles del Blog (Oscuro)</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children"><a href="index.html#">Contáctenos</a>
+                        <ul class="sub-menu">
+                            <li><a href="contact.html">Contáctenos (Claro)</a></li>
+                            <li><a href="contact-2.html">Contáctenos (Oscuro)</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
-            <div class="sidebar-wrap">
-                <h6>Av. 27 División, Nueva York,</h6>
-                <h6>NY 10002, USA</h6>
-            </div>
-            <div class="sidebar-wrap">
-                <h6><a href="tel:1800123654987">+1 800 123 654 987 </a></h6>
-                <h6><a href="/cdn-cgi/l/email-protection#8aecf8e3f9e1a4ebedefe4e9f3cae7ebe3e6a4e9e5e7"><span
-                            class="__cf_email__"
-                            data-cfemail="4a2c38233921642b2d2f2429330a272b232664292527">[email&#160;protected]</span></a>
-                </h6>
-            </div>
-            <div class="social-btn style3">
-                <a href="https://www.facebook.com/">
-                    <span class="link-effect">
-                        <span class="effect-1"><i class="fab fa-facebook"></i></span>
-                        <span class="effect-1"><i class="fab fa-facebook"></i></span>
-                    </span>
-                </a>
-                <a href="https://instagram.com/">
-                    <span class="link-effect">
-                        <span class="effect-1"><i class="fab fa-instagram"></i></span>
-                        <span class="effect-1"><i class="fab fa-instagram"></i></span>
-                    </span>
-                </a>
-                <a href="https://twitter.com/">
-                    <span class="link-effect">
-                        <span class="effect-1"><i class="fab fa-twitter"></i></span>
-                        <span class="effect-1"><i class="fab fa-twitter"></i></span>
-                    </span>
-                </a>
-                <a href="https://dribbble.com/">
-                    <span class="link-effect">
-                        <span class="effect-1"><i class="fab fa-dribbble"></i></span>
-                        <span class="effect-1"><i class="fab fa-dribbble"></i></span>
-                    </span>
-                </a>
-            </div>
         </div>
     </div>
-    <!--==============================
-	Header Area
-    ==============================-->
-    <header class="nav-header header-layout1">
+    <div class="color-scheme-wrap active"><button class="switchIcon"><i class="fa-solid fa-palette"></i></button>
+        <h3 class="color-scheme-wrap-title text-center">Cambiador de Color</h3>
+        <div class="color-switch-btns"><button data-color="#FF4F38"><i class="fa-solid fa-droplet"></i></button> <button
+                data-color="#3282FB"><i class="fa-solid fa-droplet"></i></button> <button data-color="#6D30FB"><i
+                    class="fa-solid fa-droplet"></i></button> <button data-color="#27AE60"><i
+                    class="fa-solid fa-droplet"></i></button> <button data-color="#FF7E02"><i
+                    class="fa-solid fa-droplet"></i></button></div>
+    </div>
+    <header class="th-header header-default">
         <div class="sticky-wrapper">
-            <!-- Main Menu Area -->
             <div class="menu-area">
-                <div class="container-fluid">
+                <div class="container">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto">
-                            <div class="header-logo">
-                                <a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvzzVOyC5XLgZBYhRqyxCyRDxFE6GFAeuBQ&s"
-                                        alt="logo" style="max-width: 60px;"></a>
-                            </div>
+                            <div class="header-logo "><a href="index.html"><img src="assets/img/logo.png"
+                                        alt="Buckapi"></a></div>
                         </div>
-                        <div class="col-auto ms-auto">
+                        <div class="col-auto">
                             <nav class="main-menu d-none d-lg-inline-block">
                                 <ul>
-
+                                    <li class="menu-item-has-children"><a href="index.html">Inicio</a>
+                                        <ul class="mega-menu mega-menu-content allow-natural-scroll">
+                                            <li>
+                                                <div class="container">
+                                                    <div class="row gy-4">
+                                                        <div class="col-xxl-3 col-lg-4">
+                                                            <div class="mega-menu-box">
+                                                                <div class="mega-menu-img"><img
+                                                                        src="assets/img/pages/index.jpg" alt="Home One">
+                                                                    <div class="btn-wrap"><a href="index.html"
+                                                                            class="th-btn style3">Multipágina</a> <a
+                                                                            href="home-1-op.html"
+                                                                            class="th-btn style3">Página Única</a></div>
+                                                                </div>
+                                                                <h3 class="mega-menu-title"><a href="index.html">Inicio
+                                                                        I (Startup de IA)</a></h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-3 col-lg-4">
+                                                            <div class="mega-menu-box">
+                                                                <div class="mega-menu-img"><img
+                                                                        src="assets/img/pages/home-2.jpg"
+                                                                        alt="Home Two">
+                                                                    <div class="btn-wrap"><a href="home-2.html"
+                                                                            class="th-btn style3">Multipágina</a> <a
+                                                                            href="home-2-op.html"
+                                                                            class="th-btn style3">Página Única</a></div>
+                                                                </div>
+                                                                <h3 class="mega-menu-title"><a href="home-2.html">Inicio
+                                                                        II (Tecnología de IA)</a></h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-3 col-lg-4">
+                                                            <div class="mega-menu-box">
+                                                                <div class="mega-menu-img"><img
+                                                                        src="assets/img/pages/home-3.jpg"
+                                                                        alt="Home Three">
+                                                                    <div class="btn-wrap"><a href="home-3.html"
+                                                                            class="th-btn style3">Multipágina</a> <a
+                                                                            href="home-3-op.html"
+                                                                            class="th-btn style3">Página Única</a></div>
+                                                                </div>
+                                                                <h3 class="mega-menu-title"><a href="home-3.html">Inicio
+                                                                        III (Agencia de IA)</a></h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-3 col-lg-4">
+                                                            <div class="mega-menu-box">
+                                                                <div class="mega-menu-img"><img
+                                                                        src="assets/img/pages/home-4.jpg"
+                                                                        alt="Home Four">
+                                                                    <div class="btn-wrap"><a href="home-4.html"
+                                                                            class="th-btn style3">Multipágina</a> <a
+                                                                            href="home-4-op.html"
+                                                                            class="th-btn style3">Página Única</a></div>
+                                                                </div>
+                                                                <h3 class="mega-menu-title"><a href="home-4.html">Inicio
+                                                                        IV (Generador de Imágenes IA)</a></h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-3 col-lg-4">
+                                                            <div class="mega-menu-box">
+                                                                <div class="mega-menu-img"><img
+                                                                        src="assets/img/pages/home-5.jpg"
+                                                                        alt="Home Five">
+                                                                    <div class="btn-wrap"><a href="home-5.html"
+                                                                            class="th-btn style3">Multipágina</a> <a
+                                                                            href="home-5-op.html"
+                                                                            class="th-btn style3">Página Única</a></div>
+                                                                </div>
+                                                                <h3 class="mega-menu-title"><a href="home-5.html">Inicio
+                                                                        V (Solución IA)</a></h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-3 col-lg-4">
+                                                            <div class="mega-menu-box">
+                                                                <div class="mega-menu-img"><img
+                                                                        src="assets/img/pages/home-6.jpg"
+                                                                        alt="Home Six">
+                                                                    <div class="btn-wrap"><a href="home-6.html"
+                                                                            class="th-btn style3">Multipágina</a> <a
+                                                                            href="home-6-op.html"
+                                                                            class="th-btn style3">Página Única</a></div>
+                                                                </div>
+                                                                <h3 class="mega-menu-title"><a href="home-6.html">Inicio
+                                                                        VI (Chatbot IA)</a></h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-3 col-lg-4">
+                                                            <div class="mega-menu-box">
+                                                                <div class="mega-menu-img"><img
+                                                                        src="assets/img/pages/home-7.jpg"
+                                                                        alt="Home Seven">
+                                                                    <div class="btn-wrap"><a href="home-7.html"
+                                                                            class="th-btn style3">Multipágina</a> <a
+                                                                            href="home-7-op.html"
+                                                                            class="th-btn style3">Página Única</a></div>
+                                                                </div>
+                                                                <h3 class="mega-menu-title"><a href="home-7.html">Inicio
+                                                                        VII (Generador de Perfiles IA)</a></h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-3 col-lg-4">
+                                                            <div class="mega-menu-box">
+                                                                <div class="mega-menu-img"><img
+                                                                        src="assets/img/pages/home-8.jpg"
+                                                                        alt="Home Eight">
+                                                                    <div class="btn-wrap"><a href="home-8.html"
+                                                                            class="th-btn style3">Multipágina</a> <a
+                                                                            href="home-8-op.html"
+                                                                            class="th-btn style3">Página Única</a></div>
+                                                                </div>
+                                                                <h3 class="mega-menu-title"><a href="home-8.html">Inicio
+                                                                        VIII (Escritura de Contenido IA)</a></h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-3 col-lg-4">
+                                                            <div class="mega-menu-box">
+                                                                <div class="mega-menu-img"><img
+                                                                        src="assets/img/pages/home-9.jpg"
+                                                                        alt="Home Nine">
+                                                                    <div class="btn-wrap"><a href="home-9.html"
+                                                                            class="th-btn style3">Multipágina</a> <a
+                                                                            href="home-9-op.html"
+                                                                            class="th-btn style3">Página Única</a></div>
+                                                                </div>
+                                                                <h3 class="mega-menu-title"><a href="home-9.html">Inicio
+                                                                        IX (Agente IA)</a></h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-3 col-lg-4">
+                                                            <div class="mega-menu-box">
+                                                                <div class="mega-menu-img"><img
+                                                                        src="assets/img/pages/home-10.jpg"
+                                                                        alt="Home Ten">
+                                                                    <div class="btn-wrap"><a href="home-10.html"
+                                                                            class="th-btn style3">Multipágina</a> <a
+                                                                            href="home-10-op.html"
+                                                                            class="th-btn style3">Página Única</a></div>
+                                                                </div>
+                                                                <h3 class="mega-menu-title"><a
+                                                                        href="home-10.html">Inicio X (Startup de IA
+                                                                        2)</a></h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-3 col-lg-4">
+                                                            <div class="mega-menu-box">
+                                                                <div class="mega-menu-img"><img
+                                                                        src="assets/img/pages/home-11.jpg"
+                                                                        alt="Home Eleven">
+                                                                    <div class="btn-wrap"><a href="home-11.html"
+                                                                            class="th-btn style3">Multipágina</a> <a
+                                                                            href="home-11-op.html"
+                                                                            class="th-btn style3">Página Única</a></div>
+                                                                </div>
+                                                                <h3 class="mega-menu-title"><a
+                                                                        href="home-11.html">Inicio XI (IA en Salud)</a>
+                                                                </h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-3 col-lg-4">
+                                                            <div class="mega-menu-box">
+                                                                <div class="mega-menu-img"><img
+                                                                        src="assets/img/pages/home-12.jpg"
+                                                                        alt="Home Twelve">
+                                                                    <div class="btn-wrap"><a href="home-12.html"
+                                                                            class="th-btn style3">Multipágina</a> <a
+                                                                            href="home-12-op.html"
+                                                                            class="th-btn style3">Página Única</a></div>
+                                                                </div>
+                                                                <h3 class="mega-menu-title"><a
+                                                                        href="home-12.html">Inicio XII (Generador de
+                                                                        Historias IA)</a></h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-3 col-lg-4">
+                                                            <div class="mega-menu-box">
+                                                                <div class="mega-menu-img"><img
+                                                                        src="assets/img/pages/home-13.jpg"
+                                                                        alt="Home Thirteen">
+                                                                    <div class="btn-wrap"><a href="home-13.html"
+                                                                            class="th-btn style3">Multipágina</a> <a
+                                                                            href="home-13-op.html"
+                                                                            class="th-btn style3">Página Única</a></div>
+                                                                </div>
+                                                                <h3 class="mega-menu-title"><a
+                                                                        href="home-13.html">Inicio XIII (Startup de IA
+                                                                        3)</a></h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xxl-3 col-lg-4">
+                                                            <div class="mega-menu-box coming-soon">
+                                                                <div class="mega-menu-img"><img
+                                                                        src="assets/img/pages/home-13.jpg"
+                                                                        alt="Home Forteen">
+                                                                    <h4 class="box-title">Próximamente</h4>
+                                                                </div>
+                                                                <h3 class="mega-menu-title"><a
+                                                                        href="home-13.html">Inicio XIV (Chatbot IA
+                                                                        2)</a></h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="index.html#">Sobre Nosotros</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="about.html">Sobre Nosotros (Claro)</a></li>
+                                            <li><a href="about-2.html">Sobre Nosotros (Oscuro)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="index.html#">Servicios</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="service.html">Servicios (Claro)</a></li>
+                                            <li><a href="service-2.html">Servicios (Oscuro)</a></li>
+                                            <li><a href="service-details.html">Detalles del Servicio (Claro)</a></li>
+                                            <li><a href="service-details-2.html">Detalles del Servicio (Oscuro)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="index.html#">Páginas</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item-has-children"><a href="index.html#">Tienda</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="shop.html">Tienda (Claro)</a></li>
+                                                    <li><a href="shop-2.html">Tienda (Oscuro)</a></li>
+                                                    <li><a href="shop-details.html">Detalles de Tienda (Claro)</a></li>
+                                                    <li><a href="shop-details-2.html">Detalles de Tienda (Oscuro)</a>
+                                                    </li>
+                                                    <li><a href="cart.html">Página del Carrito (Claro)</a></li>
+                                                    <li><a href="cart-2.html">Página del Carrito (Oscuro)</a></li>
+                                                    <li><a href="checkout.html">Pago (Claro)</a></li>
+                                                    <li><a href="checkout-2.html">Pago (Oscuro)</a></li>
+                                                    <li><a href="wishlist.html">Lista de Deseos (Claro)</a></li>
+                                                    <li><a href="wishlist-2.html">Lista de Deseos (Oscuro)</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children"><a href="index.html#">Proyectos</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="project.html">Proyecto (Claro)</a></li>
+                                                    <li><a href="project-2.html">Proyecto (Oscuro)</a></li>
+                                                    <li><a href="project-details.html">Detalles del Proyecto (Claro)</a>
+                                                    </li>
+                                                    <li><a href="project-details-2.html">Detalles del Proyecto
+                                                            (Oscuro)</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children"><a href="index.html#">Página de
+                                                    Equipo</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="team.html">Nuestro Equipo (Claro)</a></li>
+                                                    <li><a href="team-2.html">Nuestro Equipo (Oscuro)</a></li>
+                                                    <li><a href="team-details.html">Detalles del Equipo (Claro)</a></li>
+                                                    <li><a href="team-details-2.html">Detalles del Equipo (Oscuro)</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="chatbot.html">Integración de Chatbot (Claro)</a></li>
+                                            <li><a href="chatbot-2.html">Integración de Chatbot (Oscuro)</a></li>
+                                            <li><a href="pricing.html">Precios (Claro)</a></li>
+                                            <li><a href="pricing-2.html">Precios (Oscuro)</a></li>
+                                            <li><a href="testimonial.html">Testimonios (Claro)</a></li>
+                                            <li><a href="testimonial-2.html">Testimonios (Oscuro)</a></li>
+                                            <li><a href="faq.html">Página de Preguntas Frecuentes (Claro)</a></li>
+                                            <li><a href="faq-2.html">Página de Preguntas Frecuentes (Oscuro)</a></li>
+                                            <li><a href="ai-consulting.html">Consultoría de IA (Claro)</a></li>
+                                            <li><a href="ai-consulting-2.html">Consultoría de IA (Oscuro)</a></li>
+                                            <li><a href="error.html">Página de Error (Claro)</a></li>
+                                            <li><a href="error-2.html">Página de Error (Oscuro)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="index.html#">Blog</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="blog.html">Blog Estándar (Claro)</a></li>
+                                            <li><a href="blog-3.html">Blog Estándar (Oscuro)</a></li>
+                                            <li><a href="blog-2.html">Blog de Cuadrícula (Claro)</a></li>
+                                            <li><a href="blog-4.html">Blog de Cuadrícula (Oscuro)</a></li>
+                                            <li><a href="blog-details.html">Detalles del Blog (Claro)</a></li>
+                                            <li><a href="blog-details-2.html">Detalles del Blog (Oscuro)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="index.html#">Contáctenos</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="contact.html">Contáctenos (Claro)</a></li>
+                                            <li><a href="contact-2.html">Contáctenos (Oscuro)</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </nav>
-                            <div class="navbar-right d-inline-flex d-lg-none">
-                                <button type="button" class="menu-toggle sidebar-btn">
-                                    <span class="line"></span>
-                                    <span class="line"></span>
-                                    <span class="line"></span>
-                                </button>
-                            </div>
+                            <div class="header-button d-flex d-lg-none"><button type="button"
+                                    class="th-menu-toggle icon-btn"><i class="far fa-bars"></i></button></div>
                         </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <div class="header-button">
-
-                                <button type="button" class="sidebar-btn sideMenuToggler">
-                                    <span class="line"></span>
-                                    <span class="line"></span>
-                                    <span class="line"></span>
-                                </button>
-                            </div>
+                        <div class="col-auto d-xl-block d-none">
+                            <div class="header-button"><a href="contact.html" class="th-btn style2">Comenzar Ahora <i
+                                        class="far fa-long-arrow-right ms-2"></i></a></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
-    <!--==============================
-    Project Area
-    ==============================-->
-    <div class="pt-20">
-        <div class="award-area-1 space overflow-hidden">
+    <div class="th-hero-wrapper hero-1 bg-attachment" id="hero" data-bg-src="assets/img/hero/hero_bg_1_1.jpg">
+        <div class="hero-inner">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <ul class="award-wrap-area">
-
-                            <!-- SITIOS WEB -->
-                            <li class="single-award-list style2 tg-img-reveal-item" data-fx="1"
-                                data-img="assets/img/award/award-1-1.png">
-                                <div class="award-details">
-                                    <h4><a href="project.html">Sitios web</a></h4>
-                                    <div class="award-meta">
-                                        <a href="project.html">Informativas</a>
-                                        <a href="project.html">Tiendas virtuales</a>
-                                        <a href="project.html">Portafolios</a>
-                                        <a href="project.html">Corporativos</a>
-                                        <a href="project.html">Landing Pages</a>
-                                        <a href="project.html">Branding + Web</a>
-                                    </div>
-                                </div>
-                                <span class="award-tag">ver trabajos</span>
-                            </li>
-
-                            <!-- APLICACIONES MÓVILES -->
-                            <li class="single-award-list style2 tg-img-reveal-item" data-fx="1"
-                                data-img="assets/img/award/award-1-2.png">
-                                <div class="award-details">
-                                    <h4><a href="project.html">Aplicaciones móviles</a></h4>
-                                    <div class="award-meta">
-                                        <a href="project.html">Android</a>
-                                        <a href="project.html">iOS</a>
-                                        <a href="project.html">Híbridas (PWA)</a>
-                                        <a href="project.html">Apps logísticas</a>
-                                        <a href="project.html">Apps de reserva</a>
-                                    </div>
-                                </div>
-                                <span class="award-tag">ver trabajos</span>
-                            </li>
-
-                            <!-- APLICACIONES WEB PROGRESIVAS -->
-                            <li class="single-award-list style2 tg-img-reveal-item" data-fx="1"
-                                data-img="assets/img/award/award-1-3.png">
-                                <div class="award-details">
-                                    <h4><a href="project.html">Aplicaciones Web Progresivas</a></h4>
-                                    <div class="award-meta">
-                                        <a href="project.html">Cotizadores</a>
-                                        <a href="project.html">Marketplace</a>
-                                        <a href="project.html">Chatbots</a>
-                                        <a href="project.html">Foros</a>
-                                        <a href="project.html">Dashboards</a>
-                                        <a href="project.html">SaaS empresariales</a>
-                                        <a href="project.html">Sistemas de reservas</a>
-                                        <a href="project.html">Paneles administrativos</a>
-                                    </div>
-                                </div>
-                                <span class="award-tag">ver trabajos</span>
-                            </li>
-
-                            <!-- IA Y AUTOMATIZACIONES -->
-                            <li class="single-award-list style2 tg-img-reveal-item" data-fx="1"
-                                data-img="assets/img/award/award-1-4.png">
-                                <div class="award-details">
-                                    <h4><a href="project.html">IA y automatizaciones</a></h4>
-                                    <div class="award-meta">
-                                        <a href="project.html">Chatbots</a>
-                                        <a href="project.html">Integraciones API</a>
-                                        <a href="project.html">Flujos automáticos</a>
-                                        <a href="project.html">Correos automáticos</a>
-                                        <a href="project.html">WhatsApp Bots</a>
-                                        <a href="project.html">Sistemas CRM</a>
-                                    </div>
-                                </div>
-                                <span class="award-tag">ver trabajos</span>
-                            </li>
-                            <li class="single-award-list style2 tg-img-reveal-item" data-fx="1"
-                                data-img="assets/img/award/award-1-5.png"
-                                data-tooltip-img="assets/img/tooltips/platform.png"
-                                data-tooltip-text="Plataformas completas que incluyen módulos avanzados, múltiples roles, panel administrativo, logística, marketplace y procesos automatizados.">
-
-                                <div class="award-details">
-                                    <h4><a href="project.html">Plataformas completas</a></h4>
-                                    <div class="award-meta">
-                                        <a href="project.html">Logística (Ecobikes)</a>
-                                        <a href="project.html">Reservas & Transporte (Via-Z)</a>
-                                        <a href="project.html">Marketplace Salud (FitoSalud)</a>
-                                        <a href="project.html">ERP Ganadero (GESGAN)</a>
-                                        <a href="project.html">Inmobiliarias (Alto de Propiedad)</a>
-                                        <a href="project.html">Servicios técnicos (MariosReparación)</a>
-                                    </div>
-                                </div>
-
-                                <span class="award-tag">ver trabajos</span>
-                            </li>
-
-
-
-                        </ul>
-
+                    <div class="col-xl-10">
+                        <div class="hero-style1 text-center">
+                            <h2 class="h1 hero-title text-white text-anim2" data-cue="slideInUp" data-delay="100">
+                                Revoluciona tu Negocio con Soluciones de IA de Vanguardia.</h2>
+                            <p class="hero-text text-white text-anim2" data-cue="slideInUp" data-delay="300">Potenciando
+                                la innovación con herramientas impulsadas por IA adaptadas para tu éxito.</p>
+                            <div class="btn-wrap justify-content-center" data-cue="slideInUp" data-delay="500"><a
+                                    href="service.html" class="th-btn style2">Descubre Más <i
+                                        class="far fa-long-arrow-right ms-2"></i></a> <a href="contact.html"
+                                    class="th-btn style-border2">Contáctanos <i
+                                        class="far fa-long-arrow-right ms-2"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down"><a href="index.html#about-sec" class="hero-scroll-wrap"></a></div>
+    </div>
+    <div class="bg-theme pt-60 pb-60 overflow-hidden brand-area-1">
+        <div class="container-fluid p-0">
+            <div class="brand-wrap1 text-center">
+                <div class="swiper th-slider" data-cue="slideInUp" id="brandSlider1"
+                    data-slider-options='{"breakpoints":{"0":{"slidesPerView":"auto"}},"autoplay":{"delay":0,"disableOnInteraction":false},"noSwiping":"true","speed":8000,"spaceBetween":145}'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-1.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-2.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-3.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-4.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-5.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-6.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-1.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-2.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-3.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-4.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-5.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-6.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-1.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-2.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-3.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-4.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-5.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-6.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-1.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-2.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-3.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-4.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-5.svg" alt="Brand Logo"></a></div>
+                        <div class="swiper-slide"><a href="blog.html" class="brand-box"><img
+                                    src="assets/img/brand/brand1-6.svg" alt="Brand Logo"></a></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!--==============================
-        Footer Area
-    ==============================-->
-    <footer class="footer-wrapper footer-layout9 overflow-hidden">
+    <div class="overflow-hidden space overflow-hidden" id="about-sec" data-bg-src="assets/img/bg/about-bg-1-1.png">
         <div class="container">
-            <div class="widget-area space-top">
-                <div class="row justify-content-between">
-                    <div class="col-md-6 col-xl-5 col-lg-6">
-                        <div class="widget widget-about footer-widget">
-
-                            <div class="social-btn style3">
-                                <a href="https://www.facebook.com/">
-                                    <span class="link-effect">
-                                        <span class="effect-1"><i class="fab fa-facebook"></i></span>
-                                        <span class="effect-1"><i class="fab fa-facebook"></i></span>
-                                    </span>
-                                </a>
-                                <a href="https://instagram.com/">
-                                    <span class="link-effect">
-                                        <span class="effect-1"><i class="fab fa-instagram"></i></span>
-                                        <span class="effect-1"><i class="fab fa-instagram"></i></span>
-                                    </span>
-                                </a>
-                                <a href="https://twitter.com/">
-                                    <span class="link-effect">
-                                        <span class="effect-1"><i class="fab fa-twitter"></i></span>
-                                        <span class="effect-1"><i class="fab fa-twitter"></i></span>
-                                    </span>
-                                </a>
-                                <a href="https://dribbble.com/">
-                                    <span class="link-effect">
-                                        <span class="effect-1"><i class="fab fa-dribbble"></i></span>
-                                        <span class="effect-1"><i class="fab fa-dribbble"></i></span>
-                                    </span>
-                                </a>
+            <div class="about-wrap1">
+                <div class="row gy-40">
+                    <div class="col-xxl-8">
+                        <div class="title-area mb-10"><span class="sub-title style2 before-none text-anim"
+                                data-cue="slideInLeft" data-delay="200">¿Quiénes Somos?</span>
+                            <h2 class="sec-title mb-0 text-anim2" data-cue="slideInLeft" data-delay="300">En nuestra
+                                startup de IA, seguimos un enfoque optimizado para garantizar los mejores resultados
+                                para tu negocio.</h2>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 align-self-center">
+                        <div class="img-box1">
+                            <div class="img2" data-cue="slideInUp" data-delay="300"><img
+                                    src="assets/img/normal/about-thumb1-3.png" alt="About"></div>
+                            <div class="shadow-text">Buckapi</div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6" data-cue="slideInUp">
+                        <div class="img-box1">
+                            <div class="img1"><img src="assets/img/normal/about-thumb1-1.jpg" alt="About"></div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6" data-cue="slideInUp">
+                        <div class="img-box1">
+                            <div class="img1"><img src="assets/img/normal/about-thumb1-2.jpg" alt="About"></div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4">
+                        <div class="about-feature-card-wrap">
+                            <div class="about-feature-card" data-cue="slideInUp">
+                                <div class="box-icon">
+                                    <div class="color-masking">
+                                        <div class="masking-src"
+                                            data-mask-src="assets/img/icon/about-feature-icon1-1.svg"></div><img
+                                            src="assets/img/icon/about-feature-icon1-1.svg" alt="icon">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="box-title">100% Satisfacción del Cliente</h4>
+                                    <p class="box-text">Conformamos un equipo de especialistas en IA, científicos de
+                                        datos y expertos de la industria comprometidos a superar límites.</p>
+                                </div>
+                            </div>
+                            <div class="about-feature-card" data-cue="slideInUp" data-delay="300">
+                                <div class="box-icon">
+                                    <div class="color-masking">
+                                        <div class="masking-src"
+                                            data-mask-src="assets/img/icon/about-feature-icon1-2.svg"></div><img
+                                            src="assets/img/icon/about-feature-icon1-2.svg" alt="icon">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="box-title">Garantía de Aseguramiento de Calidad</h4>
+                                    <p class="box-text">Conformamos un equipo de especialistas en IA, científicos de
+                                        datos y expertos de la industria comprometidos a superar límites.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="copyright-wrap">
-                <div class="row gy-3 justify-content-between align-items-center">
-                    <div class="col-md-6">
-                        <!-- <p>Av. 27 División, Nueva York, <br> NY 10002, USA</p> -->
+    </div>
+    <div class="space-bottom" data-cue="slideInUp">
+        <div class="bg-gray4 overflow-hidden pt-40 pb-30">
+            <div class="container-fluid p-0">
+                <div class="swiper th-slider marquee-slider1"
+                    data-slider-options='{"breakpoints":{"0":{"slidesPerView":"auto"}},"autoplay":{"delay":0,"disableOnInteraction":false},"noSwiping":"true","speed":10000,"spaceBetween":30}'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="marquee-card">
+                                <div class="marquee-icon color-masking">
+                                    <div class="masking-src" data-mask-src="assets/img/shape/star-shape1.png"></div><img
+                                        src="assets/img/shape/star-shape1.png" alt="img">
+                                </div><a target="_blank" href="index.html#">Generador de Contenido</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="marquee-card">
+                                <div class="marquee-icon color-masking">
+                                    <div class="masking-src" data-mask-src="assets/img/shape/star-shape1.png"></div><img
+                                        src="assets/img/shape/star-shape1.png" alt="img">
+                                </div><a target="_blank" href="index.html#">Generador de Imágenes IA</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="marquee-card">
+                                <div class="marquee-icon color-masking">
+                                    <div class="masking-src" data-mask-src="assets/img/shape/star-shape1.png"></div><img
+                                        src="assets/img/shape/star-shape1.png" alt="img">
+                                </div><a target="_blank" href="index.html#">Tecnología IA</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="marquee-card">
+                                <div class="marquee-icon color-masking">
+                                    <div class="masking-src" data-mask-src="assets/img/shape/star-shape1.png"></div><img
+                                        src="assets/img/shape/star-shape1.png" alt="img">
+                                </div><a target="_blank" href="index.html#">Genera con Facilidad</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="marquee-card">
+                                <div class="marquee-icon color-masking">
+                                    <div class="masking-src" data-mask-src="assets/img/shape/star-shape1.png"></div><img
+                                        src="assets/img/shape/star-shape1.png" alt="img">
+                                </div><a target="_blank" href="index.html#">Generador de Contenido</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="marquee-card">
+                                <div class="marquee-icon color-masking">
+                                    <div class="masking-src" data-mask-src="assets/img/shape/star-shape1.png"></div><img
+                                        src="assets/img/shape/star-shape1.png" alt="img">
+                                </div><a target="_blank" href="index.html#">Generador de Imágenes IA</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="marquee-card">
+                                <div class="marquee-icon color-masking">
+                                    <div class="masking-src" data-mask-src="assets/img/shape/star-shape1.png"></div><img
+                                        src="assets/img/shape/star-shape1.png" alt="img">
+                                </div><a target="_blank" href="index.html#">Tecnología IA</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="marquee-card">
+                                <div class="marquee-icon color-masking">
+                                    <div class="masking-src" data-mask-src="assets/img/shape/star-shape1.png"></div><img
+                                        src="assets/img/shape/star-shape1.png" alt="img">
+                                </div><a target="_blank" href="index.html#">Genera con Facilidad</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6 align-self-center text-md-end">
-                        <p class="copyright-text">
-                            <a href="tel:1800123654987">
-                                +57 324 757 4928
-                            </a>
-                            <br>
-                            <a href="mailto:buckapi@gmail.com">
-                                contacto@buckapi.site
-                            </a>
-                            <br>
-                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="space bg-smoke overflow-hidden" id="service-sec">
+        <div class="service-bg-shape1-1 shape-mockup" data-bottom="0" data-left="50%"><img class="scroll-to-zoom"
+                src="assets/img/shape/bg-shape1.png" alt="img"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-8 col-xl-9 col-lg-8 col-md-10">
+                    <div class="title-area text-center">
+                        <div class="shadow-title">Servicios</div><span class="sub-title text-anim"
+                            data-cue="slideInUp">NUESTROS SERVICIOS</span>
+                        <h2 class="sec-title text-anim2" data-cue="slideInUp">Innovaciones Inteligentes: Soluciones de
+                            IA Personalizadas</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4 justify-content-center">
+                <div class="col-xxl-3 col-xl-4 col-md-6" data-cue="slideInUp">
+                    <div class="service-card">
+                        <div class="box-icon">
+                            <div class="color-masking">
+                                <div class="masking-src" data-mask-src="assets/img/icon/service/service_icon_1_1.svg">
+                                </div><img src="assets/img/icon/service/service_icon_1_1.svg" alt="icon">
+                            </div>
+                        </div>
+                        <h3 class="box-title"><a href="service.html">Desarrollo de IA</a></h3>
+                        <p class="box-text">Creando y optimizando modelos utilizando datos propietarios o del cliente.
+                            Modelo de IA adaptado a necesidades específicas del negocio.</p><a
+                            href="service-details.html" class="link-btn style4">Leer Más <i
+                                class="fas fa-long-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-md-6" data-cue="slideInUp">
+                    <div class="service-card">
+                        <div class="box-icon">
+                            <div class="color-masking">
+                                <div class="masking-src" data-mask-src="assets/img/icon/service/service_icon_1_2.svg">
+                                </div><img src="assets/img/icon/service/service_icon_1_2.svg" alt="icon">
+                            </div>
+                        </div>
+                        <h3 class="box-title"><a href="service.html">Analítica de Datos</a></h3>
+                        <p class="box-text">Proporcionando información para decisiones críticas. Pronosticando
+                            tendencias, riesgos y oportunidades.</p><a href="service-details.html"
+                            class="link-btn style4">Leer Más <i class="fas fa-long-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-md-6" data-cue="slideInUp">
+                    <div class="service-card">
+                        <div class="box-icon">
+                            <div class="color-masking">
+                                <div class="masking-src" data-mask-src="assets/img/icon/service/service_icon_1_3.svg">
+                                </div><img src="assets/img/icon/service/service_icon_1_3.svg" alt="icon">
+                            </div>
+                        </div>
+                        <h3 class="box-title"><a href="service.html">Aprendizaje Automático</a></h3>
+                        <p class="box-text">Construyendo algoritmos adaptados a necesidades específicas. Utilizando
+                            técnicas avanzadas para mejorar la precisión y eficiencia.</p><a href="service-details.html"
+                            class="link-btn style4">Leer Más <i class="fas fa-long-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-md-6" data-cue="slideInUp">
+                    <div class="service-card">
+                        <div class="box-icon">
+                            <div class="color-masking">
+                                <div class="masking-src" data-mask-src="assets/img/icon/service/service_icon_1_4.svg">
+                                </div><img src="assets/img/icon/service/service_icon_1_4.svg" alt="icon">
+                            </div>
+                        </div>
+                        <h3 class="box-title"><a href="service.html">Servicios de Consultoría de IA</a></h3>
+                        <p class="box-text">Ayudando a las empresas a identificar las aplicaciones de IA más
+                            impactantes. Evaluando la preparación del negocio.</p><a href="service-details.html"
+                            class="link-btn style4">Leer Más <i class="fas fa-long-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-md-6" data-cue="slideInUp">
+                    <div class="service-card">
+                        <div class="box-icon">
+                            <div class="color-masking">
+                                <div class="masking-src" data-mask-src="assets/img/icon/service/service_icon_1_5.svg">
+                                </div><img src="assets/img/icon/service/service_icon_1_5.svg" alt="icon">
+                            </div>
+                        </div>
+                        <h3 class="box-title"><a href="service.html">Automatización y Procesos</a></h3>
+                        <p class="box-text">Automatizando tareas repetitivas como entrada de datos o procesamiento de
+                            facturas. Mejorando el soporte al cliente.</p><a href="service-details.html"
+                            class="link-btn style4">Leer Más <i class="fas fa-long-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-md-6" data-cue="slideInUp">
+                    <div class="service-card">
+                        <div class="box-icon">
+                            <div class="color-masking">
+                                <div class="masking-src" data-mask-src="assets/img/icon/service/service_icon_1_6.svg">
+                                </div><img src="assets/img/icon/service/service_icon_1_6.svg" alt="icon">
+                            </div>
+                        </div>
+                        <h3 class="box-title"><a href="service.html">Educación y Ciencia</a></h3>
+                        <p class="box-text">Herramientas diagnósticas, sistemas de gestión de pacientes y atención
+                            predictiva. Detección de fraudes, trading algorítmico,</p><a href="service-details.html"
+                            class="link-btn style4">Leer Más <i class="fas fa-long-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-md-6" data-cue="slideInUp">
+                    <div class="service-card">
+                        <div class="box-icon">
+                            <div class="color-masking">
+                                <div class="masking-src" data-mask-src="assets/img/icon/service/service_icon_1_7.svg">
+                                </div><img src="assets/img/icon/service/service_icon_1_7.svg" alt="icon">
+                            </div>
+                        </div>
+                        <h3 class="box-title"><a href="service.html">Investigación en IA</a></h3>
+                        <p class="box-text">Automatizando tareas repetitivas como entrada de datos o procesamiento de
+                            facturas. Mejorando la eficiencia mediante integración.</p><a href="service-details.html"
+                            class="link-btn style4">Leer Más <i class="fas fa-long-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-md-6" data-cue="slideInUp">
+                    <div class="service-card">
+                        <div class="box-icon">
+                            <div class="color-masking">
+                                <div class="masking-src" data-mask-src="assets/img/icon/service/service_icon_1_8.svg">
+                                </div><img src="assets/img/icon/service/service_icon_1_8.svg" alt="icon">
+                            </div>
+                        </div>
+                        <h3 class="box-title"><a href="service.html">IA en Ciberseguridad</a></h3>
+                        <p class="box-text">Garantizando la integridad del sistema mediante supervisión impulsada por
+                            IA. Utilizando IA para detectar anomalías y prevenir.</p><a href="service-details.html"
+                            class="link-btn style4">Leer Más <i class="fas fa-long-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="why-sec-1 overflow-hidden space bg-black2 overflow-hidden">
+        <div class="container">
+            <div class="row gy-40 gx-80">
+                <div class="col-xxl-7">
+                    <div class="title-area mb-60"><span class="sub-title text-anim before-none"
+                            data-cue="slideInLeft">¿POR QUÉ ELEGIRNOS?</span>
+                        <h2 class="sec-title text-white text-anim2" data-cue="slideInLeft">Nuestro objetivo es construir
+                            un mundo donde la tecnología sirva a la humanidad.</h2>
+                    </div>
+                    <div class="why-img-box1" data-cue="slideInUp"><img src="assets/img/normal/why-thumb1-1.jpg"
+                            alt="img"></div>
+                </div>
+                <div class="col-xxl-5">
+                    <div class="why-counter-wrap-1">
+                        <div class="why-counter-card">
+                            <h2 class="box-number text-white" data-cue="slideInUp"><span
+                                    class="counter-number">24</span><span class="counter-marker">+</span></h2>
+                            <h4 class="counter-text text-white" data-cue="slideInUp">Años de Experiencia</h4>
+                        </div>
+                    </div>
+                    <div class="why-card-wrap">
+                        <div class="circle-tag" data-cue="slideInUp"><span class="circle-title-anime">ROBOR -
+                                INTEGRACIÓN DE IA Y AUTOMATIZACIÓN.</span> <a href="index.html#" class="icon-btn"><i
+                                    class="fal fa-long-arrow-right"></i></a></div>
+                        <div class="why-card" data-cue="slideInUp">
+                            <div class="box-number">01.</div>
+                            <div class="box-details">
+                                <h4 class="box-title">Integración de Tecnología</h4>
+                                <p class="box-text">Conformamos un equipo de especialistas en IA, científicos de datos y
+                                    expertos de la industria comprometidos a superar límites.</p>
+                            </div>
+                        </div>
+                        <div class="why-card" data-cue="slideInUp">
+                            <div class="box-number">02.</div>
+                            <div class="box-details">
+                                <h4 class="box-title">Expertos Certificados</h4>
+                                <p class="box-text">Conformamos un equipo de especialistas en IA, científicos de datos y
+                                    expertos de la industria comprometidos a superar límites.</p>
+                            </div>
+                        </div>
+                        <div class="why-card" data-cue="slideInUp">
+                            <div class="box-number">03.</div>
+                            <div class="box-details">
+                                <h4 class="box-title">Compromiso sin Esfuerzo</h4>
+                                <p class="box-text">Conformamos un equipo de especialistas en IA, científicos de datos y
+                                    expertos de la industria comprometidos a superar límites.</p>
+                            </div>
+                        </div>
+                        <div class="why-card" data-cue="slideInUp">
+                            <div class="box-number">04.</div>
+                            <div class="box-details">
+                                <h4 class="box-title">Visión y Misión Futura</h4>
+                                <p class="box-text">Conformamos un equipo de especialistas en IA, científicos de datos y
+                                    expertos de la industria comprometidos a superar límites.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="space overflow-hidden" id="project-sec">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-6 col-xl-8">
+                    <div class="title-area text-center">
+                        <div class="shadow-title style2">Caso</div><span class="sub-title text-anim"
+                            data-cue="slideInUp">Estudio de Caso</span>
+                        <h2 class="sec-title text-anim2" data-cue="slideInUp">Estudio de Caso de Proyectos de IA</h2>
+                        <p class="sec-text" data-cue="slideInUp">Una agencia de IA es una organización especializada
+                            dedicada a ayudar a empresas y organizaciones a aprovechar la inteligencia artificial para
+                            lograr sus objetivos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container th-container">
+            <div class="slider-area">
+                <div class="swiper th-slider project-slider1" id="projectSlider1"
+                    data-slider-options='{"paginationType":"progressbar","breakpoints":{"0":{"slidesPerView":1},"1000":{"slidesPerView":"2"}}}'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="project-card">
+                                <div class="box-img"><img src="assets/img/project/project1-1.jpg" alt="project image">
+                                </div>
+                                <div class="box-content">
+                                    <p class="box-subtitle">Robótica, Programa</p>
+                                    <h3 class="box-title"><a href="project-details.html">Aprendizaje Automático IA</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-card">
+                                <div class="box-img"><img src="assets/img/project/project1-2.jpg" alt="project image">
+                                </div>
+                                <div class="box-content">
+                                    <p class="box-subtitle">Investigación de Usuario</p>
+                                    <h3 class="box-title"><a href="project-details.html">Reconocedor de voz usando
+                                            aprendizaje profundo</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-card">
+                                <div class="box-img"><img src="assets/img/project/project1-1.jpg" alt="project image">
+                                </div>
+                                <div class="box-content">
+                                    <p class="box-subtitle">Robótica, Programa</p>
+                                    <h3 class="box-title"><a href="project-details.html">Aprendizaje Automático IA</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-card">
+                                <div class="box-img"><img src="assets/img/project/project1-2.jpg" alt="project image">
+                                </div>
+                                <div class="box-content">
+                                    <p class="box-subtitle">Investigación de Usuario</p>
+                                    <h3 class="box-title"><a href="project-details.html">Reconocedor de voz usando
+                                            aprendizaje profundo</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-pagination-wrap mt-60">
+                        <div class="slider-pagination2"></div>
+                        <div class="slider-pagination"></div>
+                        <div class="icon-box"><button data-slider-prev="#projectSlider1"
+                                class="slider-arrow style2 default"><i class="far fa-arrow-left"></i></button> <button
+                                data-slider-next="#projectSlider1" class="slider-arrow style2 default"><i
+                                    class="far fa-arrow-right"></i></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testi-area-1 space overflow-hidden bg-smoke" id="testi-sec">
+        <div class="container">
+            <div class="row gy-50 flex-row-reverse">
+                <div class="col-xl-7">
+                    <div class="testi-thumb1-1">
+                        <div class="img1" data-cue="slideInRight"><img src="assets/img/testimonial/testi-thumb1-1.jpg"
+                                alt="img"></div>
+                    </div>
+                </div>
+                <div class="col-xl-5">
+                    <div class="title-area"><span class="sub-title style2 before-none text-anim"
+                            data-cue="slideInUp">Testimonios</span>
+                        <h2 class="sec-title text-anim2" data-cue="slideInUp">Lo que Nuestros Clientes Dicen de Nosotros
+                        </h2>
+                    </div>
+                    <div class="slider-area testi-slider1" data-cue="slideInUp">
+                        <div class="swiper th-slider has-shadow" id="testiSlide1"
+                            data-slider-options='{"autoHeight": "true","breakpoints":{"0":{"slidesPerView":1},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"2"},"1600":{"slidesPerView":"2"}}}'>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testi-card">
+                                        <div class="testi-card_review"><i class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i></div>
+                                        <p class="box-text">"Sit molestie orci a lacus. Consectetur eu accumsan aliquet
+                                            nisi. Eget mauris commodo dis sed arcu integer fringilla. Egestas vitae non
+                                            cum sit. Tellus nec in sapien maecenas in vel."</p>
+                                        <div class="testi-card-profile">
+                                            <div class="testi-card-avater"><img
+                                                    src="assets/img/testimonial/testi1-1.jpg" alt="img"></div>
+                                            <div class="testi-card-profile-detaile">
+                                                <h3 class="box-title">Michael Lacefield</h3>
+                                                <p class="box-desig">Co-fundador, XYZ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testi-card">
+                                        <div class="testi-card_review"><i class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i></div>
+                                        <p class="box-text">"Eget mauris commodo dis sed arcu integer fringilla. Sit
+                                            molestie orci a lacus. Consectetur eu accumsan aliquet nisi. Egestas vitae
+                                            non cum sit. Tellus nec in sapien maecenas in vel."</p>
+                                        <div class="testi-card-profile">
+                                            <div class="testi-card-avater"><img
+                                                    src="assets/img/testimonial/testi1-2.jpg" alt="img"></div>
+                                            <div class="testi-card-profile-detaile">
+                                                <h3 class="box-title">Harry Callum</h3>
+                                                <p class="box-desig">Co-fundador</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testi-card">
+                                        <div class="testi-card_review"><i class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i></div>
+                                        <p class="box-text">"Consectetur eu accumsan aliquet nisi. Sit molestie orci a
+                                            lacus. Eget mauris commodo dis sed arcu integer fringilla. Egestas vitae non
+                                            cum sit. Tellus nec in sapien maecenas in vel."</p>
+                                        <div class="testi-card-profile">
+                                            <div class="testi-card-avater"><img
+                                                    src="assets/img/testimonial/testi1-3.jpg" alt="img"></div>
+                                            <div class="testi-card-profile-detaile">
+                                                <h3 class="box-title">Mason Robert</h3>
+                                                <p class="box-desig">Co-fundador, XYZ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testi-card">
+                                        <div class="testi-card_review"><i class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i></div>
+                                        <p class="box-text">"Tellus nec in sapien maecenas in vel. Sit molestie orci a
+                                            lacus. Consectetur eu accumsan aliquet nisi. Eget mauris commodo dis sed
+                                            arcu integer fringilla. Egestas vitae non cum sit."</p>
+                                        <div class="testi-card-profile">
+                                            <div class="testi-card-avater"><img
+                                                    src="assets/img/testimonial/testi1-4.jpg" alt="img"></div>
+                                            <div class="testi-card-profile-detaile">
+                                                <h3 class="box-title">Amelia Margaret</h3>
+                                                <p class="box-desig">Co-fundador</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testi-card">
+                                        <div class="testi-card_review"><i class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i></div>
+                                        <p class="box-text">"Egestas vitae non cum sit. Sit molestie orci a lacus.
+                                            Consectetur eu accumsan aliquet nisi. Eget mauris commodo dis sed arcu
+                                            integer fringilla. Tellus nec in sapien maecenas in vel."</p>
+                                        <div class="testi-card-profile">
+                                            <div class="testi-card-avater"><img
+                                                    src="assets/img/testimonial/testi1-5.jpg" alt="img"></div>
+                                            <div class="testi-card-profile-detaile">
+                                                <h3 class="box-title">Sophia Jennifer</h3>
+                                                <p class="box-desig">Co-fundador, XYZ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testi-card">
+                                        <div class="testi-card_review"><i class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i><i
+                                                class="fa-sharp fa-solid fa-star"></i></div>
+                                        <p class="box-text">"Mauris eget commodo dis sed arcu integer fringilla. Sit
+                                            molestie orci a lacus. Consectetur eu accumsan aliquet nisi. Egestas vitae
+                                            non cum sit. Tellus nec in sapien maecenas in vel."</p>
+                                        <div class="testi-card-profile">
+                                            <div class="testi-card-avater"><img
+                                                    src="assets/img/testimonial/testi1-6.jpg" alt="img"></div>
+                                            <div class="testi-card-profile-detaile">
+                                                <h3 class="box-title">Daniel Thomas</h3>
+                                                <p class="box-desig">Co-fundador</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-pagination-wrap mt-15"><button data-slider-prev="#testiSlide1"
+                                    class="slider-arrow default"><i class="far fa-arrow-left"></i></button>
+                                <div class="slider-pagination"></div><button data-slider-next="#testiSlide1"
+                                    class="slider-arrow default"><i class="far fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feature-area-1 position-relative space overflow-hidden" data-bg-src="assets/img/bg/feature-bg-1.jpg"
+        data-overlay="theme" id="feature-sec">
+        <div class="feature-bg-img1 bg-repeat" data-bg-src="assets/img/bg/jiji-bg-shape.png" data-overlay="black"
+            data-opacity="6"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-10">
+                    <div class="title-area text-center"><span class="sub-title text-white text-anim"
+                            data-cue="slideInUp">tecnología avanzada</span>
+                        <h2 class="sec-title text-white text-anim2" data-cue="slideInUp">El Futuro está Aquí: Tecnología
+                            de IA Avanzada</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4 justify-content-center">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="feature-card">
+                        <div class="feature-card-details">
+                            <div class="box-icon"><img src="assets/img/icon/feature-icon1-1.svg" alt="icon"></div>
+                            <h3 class="box-title">Soporte Técnico</h3>
+                            <p class="box-text">Potenciar a las empresas con soluciones inteligentes, escalables e
+                                impactantes que impulsan el progreso</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="feature-card">
+                        <div class="feature-card-details">
+                            <div class="box-icon"><img src="assets/img/icon/feature-icon1-2.svg" alt="icon"></div>
+                            <h3 class="box-title">Robo Genio</h3>
+                            <p class="box-text">Potenciar a las empresas con soluciones inteligentes, escalables e
+                                impactantes que impulsan el progreso</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="feature-card">
+                        <div class="feature-card-details">
+                            <div class="box-icon"><img src="assets/img/icon/feature-icon1-3.svg" alt="icon"></div>
+                            <h3 class="box-title">Generación de Imágenes</h3>
+                            <p class="box-text">Potenciar a las empresas con soluciones inteligentes, escalables e
+                                impactantes que impulsan el progreso</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="feature-card">
+                        <div class="feature-card-details">
+                            <div class="box-icon"><img src="assets/img/icon/feature-icon1-4.svg" alt="icon"></div>
+                            <h3 class="box-title">Chatbots</h3>
+                            <p class="box-text">Potenciar a las empresas con soluciones inteligentes, escalables e
+                                impactantes que impulsan el progreso</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="video-area-1 overflow-hidden" data-sec-pos="top-half" data-pos-for="#feature-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="video-thumb1-1 video-box-center" data-cue="slideInUp" data-overlay="black"
+                        data-opacity="3"><img src="assets/img/normal/video1-1.jpg" alt="img"> <a
+                            href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn style2 popup-video"><i
+                                class="fa-sharp fa-solid fa-play"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overflow-hidden space overflow-hidden">
+        <div class="container">
+            <div class="row gy-40">
+                <div class="col-xxl-6">
+                    <div class="title-area"><span class="sub-title style2 before-none text-anim"
+                            data-cue="slideInUp">Preguntas Frecuentes</span>
+                        <h2 class="sec-title text-anim2" data-cue="slideInLeft">Preguntas Frecuentes</h2>
+                    </div>
+                </div>
+                <div class="col-xxl-6 align-self-center">
+                    <div class="img-box1">
+                        <div class="img2" data-cue="slideInUp"><img src="assets/img/normal/about-thumb1-3.png"
+                                alt="About"></div>
+                        <div class="shadow-text">Buckapi</div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-wrap1">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-card" data-cue="slideInUp">
+                        <div class="accordion-header" id="collapse-item-1"><button class="accordion-button"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1"
+                                aria-expanded="true" aria-controls="collapse-1">¿Qué es una startup de IA y qué
+                                servicios ofrecen?</button></div>
+                        <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="collapse-item-1"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="faq-text">Una startup de IA como Software as a Service combina la
+                                    escalabilidad de plataformas basadas en la nube con el poder de la inteligencia
+                                    artificial para ofrecer soluciones innovadoras y bajo demanda. Estas startups
+                                    atienden a una amplia gama de industrias ofreciendo herramientas y aplicaciones
+                                    impulsadas por IA que resuelven desafíos comerciales específicos, mejoran la
+                                    eficiencia e impulsan decisiones informadas por datos. La industria de la IA se está
+                                    expandiendo rápidamente, con oportunidades para interrumpir industrias tradicionales
+                                    y crear mercados completamente nuevos. Los avances continuos en hardware y
+                                    algoritmos posicionan a las startups de IA para desempeñar un papel fundamental en
+                                    la configuración del futuro.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-card" data-cue="slideInUp">
+                        <div class="accordion-header" id="collapse-item-2"><button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2"
+                                aria-expanded="false" aria-controls="collapse-2">¿Ofrecen modelos de IA pre-construidos
+                                o crean todo desde cero?</button></div>
+                        <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="collapse-item-2"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="faq-text">Una startup de IA como Software as a Service combina la
+                                    escalabilidad de plataformas basadas en la nube con el poder de la inteligencia
+                                    artificial para ofrecer soluciones innovadoras y bajo demanda. Estas startups
+                                    atienden a una amplia gama de industrias ofreciendo herramientas y aplicaciones
+                                    impulsadas por IA que resuelven desafíos comerciales específicos, mejoran la
+                                    eficiencia e impulsan decisiones informadas por datos. La industria de la IA se está
+                                    expandiendo rápidamente, con oportunidades para interrumpir industrias tradicionales
+                                    y crear mercados completamente nuevos. Los avances continuos en hardware y
+                                    algoritmos posicionan a las startups de IA para desempeñar un papel fundamental en
+                                    la configuración del futuro.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-card" data-cue="slideInUp">
+                        <div class="accordion-header" id="collapse-item-3"><button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3"
+                                aria-expanded="false" aria-controls="collapse-3">¿Cuál es el proceso para desarrollar
+                                una solución de IA para mi negocio?</button></div>
+                        <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="collapse-item-3"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="faq-text">Una startup de IA como Software as a Service combina la
+                                    escalabilidad de plataformas basadas en la nube con el poder de la inteligencia
+                                    artificial para ofrecer soluciones innovadoras y bajo demanda. Estas startups
+                                    atienden a una amplia gama de industrias ofreciendo herramientas y aplicaciones
+                                    impulsadas por IA que resuelven desafíos comerciales específicos, mejoran la
+                                    eficiencia e impulsan decisiones informadas por datos. La industria de la IA se está
+                                    expandiendo rápidamente, con oportunidades para interrumpir industrias tradicionales
+                                    y crear mercados completamente nuevos. Los avances continuos en hardware y
+                                    algoritmos posicionan a las startups de IA para desempeñar un papel fundamental en
+                                    la configuración del futuro.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-card" data-cue="slideInUp">
+                        <div class="accordion-header" id="collapse-item-4"><button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4"
+                                aria-expanded="false" aria-controls="collapse-4">¿Qué es una startup de IA y qué
+                                servicios ofrecen?</button></div>
+                        <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="collapse-item-4"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="faq-text">Una startup de IA como Software as a Service combina la
+                                    escalabilidad de plataformas basadas en la nube con el poder de la inteligencia
+                                    artificial para ofrecer soluciones innovadoras y bajo demanda. Estas startups
+                                    atienden a una amplia gama de industrias ofreciendo herramientas y aplicaciones
+                                    impulsadas por IA que resuelven desafíos comerciales específicos, mejoran la
+                                    eficiencia e impulsan decisiones informadas por datos. La industria de la IA se está
+                                    expandiendo rápidamente, con oportunidades para interrumpir industrias tradicionales
+                                    y crear mercados completamente nuevos. Los avances continuos en hardware y
+                                    algoritmos posicionan a las startups de IA para desempeñar un papel fundamental en
+                                    la configuración del futuro.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-card" data-cue="slideInUp">
+                        <div class="accordion-header" id="collapse-item-5"><button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5"
+                                aria-expanded="false" aria-controls="collapse-5">¿Cómo garantizan la privacidad de datos
+                                y el cumplimiento de regulaciones?</button></div>
+                        <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="collapse-item-5"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="faq-text">Una startup de IA como Software as a Service combina la
+                                    escalabilidad de plataformas basadas en la nube con el poder de la inteligencia
+                                    artificial para ofrecer soluciones innovadoras y bajo demanda. Estas startups
+                                    atienden a una amplia gama de industrias ofreciendo herramientas y aplicaciones
+                                    impulsadas por IA que resuelven desafíos comerciales específicos, mejoran la
+                                    eficiencia e impulsan decisiones informadas por datos. La industria de la IA se está
+                                    expandiendo rápidamente, con oportunidades para interrumpir industrias tradicionales
+                                    y crear mercados completamente nuevos. Los avances continuos en hardware y
+                                    algoritmos posicionan a las startups de IA para desempeñar un papel fundamental en
+                                    la configuración del futuro.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="overflow-hidden">
+        <div class="price-wrap1 bg-smoke space">
+            <div class="price-bg-shape1-1 shape-mockup" data-bottom="0" data-left="50%"><img class="scroll-to-zoom"
+                    src="assets/img/shape/bg-shape1.png" alt="img"></div>
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-xxl-12">
+                        <div class="title-area text-center"><span class="sub-title text-anim" data-cue="slideInUp">PLAN
+                                DE PRECIOS</span>
+                            <h2 class="sec-title text-anim2" data-cue="slideInUp">Plan de Precios Accesible</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-30 justify-content-center">
+                    <div class="col-xl-4 col-md-6" data-cue="slideInUp">
+                        <div class="price-card">
+                            <h3 class="box-title">Básico</h3>
+                            <p class="box-text">Esta es una excelente opción para personas y pequeñas empresas que están
+                                comenzando.</p>
+                            <div class="price_card-wrap">
+                                <h4 class="price-card_price">$25.95<span class="duration">/Por mes</span></h4>
+                                <p class="box-subtitle">Hasta 10 Miembros por mes</p>
+                            </div>
+                            <div class="checklist">
+                                <ul>
+                                    <li><i class="fas fa-circle-check"></i> Planes de cultivo y límites de campo</li>
+                                    <li class="unavailable"><i class="fas fa-circle-check"></i> Módulo/app de
+                                        reconocimiento</li>
+                                    <li class="unavailable"><i class="fas fa-circle-check"></i> Humedad relativa de
+                                        cultivos por satélite</li>
+                                </ul>
+                            </div>
+                            <div class="btn-wrap"><a href="contact.html" class="th-btn w-100">Elige tu Plan</a></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6" data-cue="slideInUp">
+                        <div class="price-card">
+                            <h3 class="box-title">Estándar</h3>
+                            <p class="box-text">Esta es una excelente opción para personas y pequeñas empresas que están
+                                comenzando.</p>
+                            <div class="price_card-wrap">
+                                <h4 class="price-card_price">$85.95<span class="duration">/Por mes</span></h4>
+                                <p class="box-subtitle">Hasta 10 Miembros por mes</p>
+                            </div>
+                            <div class="checklist">
+                                <ul>
+                                    <li><i class="fas fa-circle-check"></i> Planes de cultivo y límites de campo</li>
+                                    <li><i class="fas fa-circle-check"></i> Módulo/app de reconocimiento</li>
+                                    <li class="unavailable"><i class="fas fa-circle-check"></i> Humedad relativa de
+                                        cultivos por satélite</li>
+                                </ul>
+                            </div>
+                            <div class="btn-wrap"><a href="contact.html" class="th-btn w-100">Elige tu Plan</a></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6" data-cue="slideInUp">
+                        <div class="price-card">
+                            <h3 class="box-title">Premium</h3>
+                            <p class="box-text">Esta es una excelente opción para personas y pequeñas empresas que están
+                                comenzando.</p>
+                            <div class="price_card-wrap">
+                                <h4 class="price-card_price">$165.95<span class="duration">/Por mes</span></h4>
+                                <p class="box-subtitle">Hasta 10 Miembros por mes</p>
+                            </div>
+                            <div class="checklist">
+                                <ul>
+                                    <li><i class="fas fa-circle-check"></i> Planes de cultivo y límites de campo</li>
+                                    <li><i class="fas fa-circle-check"></i> Módulo/app de reconocimiento</li>
+                                    <li><i class="fas fa-circle-check"></i> Humedad relativa de cultivos por satélite
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn-wrap"><a href="contact.html" class="th-btn w-100">Elige tu Plan</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="space overflow-hidden" id="blog-sec">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-6 col-lg-8">
+                    <div class="title-area"><span class="sub-title style2 before-none text-anim"
+                            data-cue="slideInLeft">Noticias</span>
+                        <h2 class="sec-title text-anim" data-cue="slideInLeft">Nuestras Últimas Noticias y Blog</h2>
+                    </div>
+                </div>
+                <div class="col-auto align-self-end">
+                    <div class="sec-btn" data-cue="slideInRight"><a href="blog.html" class="th-btn style-border">Ver
+                            Todas las Publicaciones <i class="far fa-long-arrow-right ms-2"></i></a></div>
+                </div>
+            </div>
+            <div class="row gy-40 justify-content-center">
+                <div class="col-xl-4 col-lg-6" data-cue="slideInUp">
+                    <div class="blog-card">
+                        <div class="blog-img"><a href="blog-details.html"><img src="assets/img/blog/blog_1_1.jpg"
+                                    alt="blog image"></a></div>
+                        <div class="blog-content">
+                            <div class="blog-meta"><a href="blog.html"><i class="far fa-calendar"></i>24 Ene, 2025</a>
+                                <a href="blog.html"><i class="far fa-user"></i>por admin</a></div>
+                            <h3 class="box-title"><a href="blog-details.html">El auge de la IA y la Robótica en las
+                                    experiencias de clientes retail</a></h3><a href="blog-details.html"
+                                class="link-btn style4">Leer Más <i class="fas fa-long-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6" data-cue="slideInUp">
+                    <div class="blog-card">
+                        <div class="blog-img"><a href="blog-details.html"><img src="assets/img/blog/blog_1_2.jpg"
+                                    alt="blog image"></a></div>
+                        <div class="blog-content">
+                            <div class="blog-meta"><a href="blog.html"><i class="far fa-calendar"></i>16 Jul, 2025</a>
+                                <a href="blog.html"><i class="far fa-user"></i>por admin</a></div>
+                            <h3 class="box-title"><a href="blog-details.html">Cómo la IA está Transformando Empresas en
+                                    Todas las Industrias</a></h3><a href="blog-details.html"
+                                class="link-btn style4">Leer Más <i class="fas fa-long-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6" data-cue="slideInUp">
+                    <div class="blog-card">
+                        <div class="blog-img"><a href="blog-details.html"><img src="assets/img/blog/blog_1_3.jpg"
+                                    alt="blog image"></a></div>
+                        <div class="blog-content">
+                            <div class="blog-meta"><a href="blog.html"><i class="far fa-calendar"></i>30 Jun, 2025</a>
+                                <a href="blog.html"><i class="far fa-user"></i>por admin</a></div>
+                            <h3 class="box-title"><a href="blog-details.html">Entendiendo el Aprendizaje Profundo y las
+                                    Redes Neuronales en IA</a></h3><a href="blog-details.html"
+                                class="link-btn style4">Leer Más <i class="fas fa-long-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-wrapper footer-default">
+        <div class="footer-bg-shape bg-title" data-mask-src="assets/img/shape/footer-bg-shape1.png"></div>
+        <div class="footer-bg-shape2 shape-mockup" data-bottom="-45%" data-right="-45%"><img
+                src="assets/img/shape/footer-bg-shape2.png" alt="img"></div>
+        <div class="footer-cta-wrap space" id="contact-sec">
+            <div class="shadow-text">Buckapi</div>
+            <div class="container">
+                <div class="row gy-40 justify-content-between">
+                    <div class="col-lg-6">
+                        <div class="title-area mb-0"><span class="sub-title text-white before-none text-anim"
+                                data-cue="slideInLeft">Comenzar</span>
+                            <h2 class="sec-title text-white text-anim2" data-cue="slideInLeft">Hagamos Algo Grande
+                                Juntos</h2>
+                            <div class="btn-wrap mt-40" data-cue="slideInLeft"><a href="contact.html"
+                                    class="th-btn style2">Contáctenos<i class="far fa-long-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer-cta-thumb" data-cue="slideInRight"><img
+                                src="assets/img/normal/footer-thumb1-1.png" alt="img"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="widget-area" data-bg-src="assets/img/bg/footer-default-bg.png">
+            <div class="footer-widget-bg" data-bg-src="assets/img/bg/jiji-bg-shape.png"></div>
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-6 col-xl-auto" data-cue="slideInUp">
+                        <div class="widget footer-widget">
+                            <div class="th-widget-about">
+                                <div class="about-logo"><a href="index.html"><img src="assets/img/logo.svg"
+                                            alt="Buckapi"></a></div>
+                                <p class="about-text">La privacidad y seguridad de datos están en el núcleo de nuestras
+                                    operaciones, asegurando el cumplimiento con estándares globales como GDPR y HIPAA.
+                                </p>
+                                <div class="th-social"><a href="https://www.facebook.com/"><i
+                                            class="fab fa-facebook-f"></i></a> <a href="https://www.twitter.com/"><i
+                                            class="fab fa-twitter"></i></a> <a href="https://www.youtube.com/"><i
+                                            class="fab fa-youtube"></i></a> <a href="https://www.linkedin.com/"><i
+                                            class="fab fa-linkedin-in"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-auto" data-cue="slideInUp">
+                        <div class="widget widget_nav_menu footer-widget">
+                            <h3 class="widget_title">Enlaces Útiles</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="index.html">Inicio</a></li>
+                                    <li><a href="about.html">Sobre Nosotros</a></li>
+                                    <li><a href="service.html">Características</a></li>
+                                    <li><a href="project.html">Proyectos</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-auto" data-cue="slideInUp">
+                        <div class="widget widget_nav_menu footer-widget">
+                            <h3 class="widget_title">Empresa</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="about.html">Lo que Ofrecemos</a></li>
+                                    <li><a href="about.html">Nuestra Historia</a></li>
+                                    <li><a href="blog.html">Últimas Publicaciones</a></li>
+                                    <li><a href="contact.html">Centro de Ayuda</a></li>
+                                    <li><a href="about.html">Nuestros Socios</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-auto" data-cue="slideInUp">
+                        <div class="widget widget_nav_menu footer-widget">
+                            <h3 class="widget_title">Nuestro Servicio</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="service.html">Automatización Robótica</a></li>
+                                    <li><a href="service.html">Educación y Ciencia</a></li>
+                                    <li><a href="service.html">Aprendizaje Automático</a></li>
+                                    <li><a href="service.html">Análisis Predictivo</a></li>
+                                    <li><a href="service.html">Seguridad de Datos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-auto" data-cue="slideInUp">
+                        <div class="widget widget_download footer-widget">
+                            <h4 class="widget_title">Obtener la App</h4>
+                            <p class="footer-text">Sugerimos conectar aplicaciones</p>
+                            <div class="download-widget-wrap"><a href="about.html" class="th-btn"><img
+                                        src="assets/img/theme-img/google-btn.png" alt="img"></a><a href="about.html"
+                                    class="th-btn"><img src="assets/img/theme-img/app-store-btn.png" alt="img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap">
+            <div class="container">
+                <div class="row justify-content-center gy-3 align-items-center">
+                    <div class="col-md-6" data-cue="slideInUp">
+                        <p class="copyright-text"><i class="fal fa-copyright"></i> Copyright 2025 <a
+                                href="index.html">Buckapi</a>. Todos los Derechos Reservados.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end text-center" data-cue="slideInUp">
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="about.html">Política de Privacidad</a></li>
+                                <li><a href="about.html">Términos de Servicio</a></li>
+                                <li><a href="about.html">Aviso Legal</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
-    <!--********************************
-			Code End  Here
-	******************************** -->
-
-    <!-- Scroll To Top -->
-    <div class="scroll-top">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+    <div class="scroll-top"><svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
                 style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
             </path>
-        </svg>
-    </div>
-
-
-    <!-- Jquery -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/gsap.min.js"></script>
-    <script src="assets/js/ScrollTrigger.min.js"></script>
-    <script src="assets/js/sticky-kit.min.js"></script>
-
-
-    <script src="assets/js/imageRevealHover.js"></script>
-    <script src="assets/js/jarallax.min.js"></script>
-    <script src="assets/js/jquery.marquee.min.js"></script>
-    <script src="assets/js/jquery-ui.min.js"></script>
-    <script src="assets/js/waypoints.js"></script>
-    <script src="assets/js/wow.js"></script>
-
-    <!-- Main Js File -->
+        </svg></div>
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/particles-config.js"></script>
     <script src="assets/js/main.js"></script>
-    <style>
-        .contact-form .form-control::placeholder,
-        .contact-form textarea::placeholder {
-            color: #fff !important;
-            opacity: 1;
-        }
-
-        .contact-form .form-control,
-        .contact-form textarea {
-            color: #fff !important;
-        }
-    </style>
-    <style>
-        .project-type-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-        }
-
-        .project-option {
-            display: block;
-        }
-
-        .project-option input {
-            display: none;
-        }
-
-        .project-option .box {
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            text-align: center;
-            cursor: pointer;
-            transition: all .25s ease;
-            background: #fff;
-        }
-
-        .project-option .box i {
-            font-size: 28px;
-            margin-bottom: 8px;
-            display: block;
-            color: #111;
-        }
-
-        .project-option .box:hover {
-            border-color: #000;
-        }
-
-        .project-option input:checked+.box {
-            border-color: #000;
-            background: #000;
-            color: #fff;
-        }
-
-        .project-option input:checked+.box i {
-            color: #fff;
-        }
-
-        /* TOOLTIP GENERAL */
-        .single-award-list[data-tooltip] {
-            position: relative;
-        }
-
-        .single-award-list[data-tooltip]::after {
-            content: attr(data-tooltip);
-            position: absolute;
-            left: 50%;
-            bottom: 110%;
-            transform: translateX(-50%);
-            background: #0866FF;
-            color: #fff;
-            padding: 10px 14px;
-            font-size: 13px;
-            line-height: 1.4;
-            border-radius: 6px;
-            width: 220px;
-            opacity: 0;
-            visibility: hidden;
-            transition: all .25s ease;
-            pointer-events: none;
-            text-align: center;
-            z-index: 9999;
-        }
-
-        /* Flecha del tooltip */
-        .single-award-list[data-tooltip]::before {
-            content: "";
-            position: absolute;
-            left: 50%;
-            bottom: 100%;
-            transform: translateX(-50%);
-            border-width: 6px;
-            border-style: solid;
-            border-color: #0866FF transparent transparent transparent;
-            opacity: 0;
-            visibility: hidden;
-            transition: all .25s ease;
-        }
-
-        /* Mostrar tooltip en hover */
-        .single-award-list[data-tooltip]:hover::after,
-        .single-award-list[data-tooltip]:hover::before {
-            opacity: 1;
-            visibility: visible;
-            bottom: 120%;
-        }
-
-        /* CONTENEDOR TOOLTIP */
-        .single-award-list[data-tooltip-text],
-        .single-award-list[data-tooltip-img] {
-            position: relative;
-        }
-
-        /* TOOLTIP (contenido completo) */
-        .single-award-list[data-tooltip-text]::after {
-            content: "";
-            position: absolute;
-            left: 50%;
-            bottom: 100%;
-            /* Justo encima */
-            transform: translateX(-50%);
-            background: #0866FF;
-            padding: 10px;
-            border-radius: 8px;
-            width: 240px;
-            opacity: 0;
-            visibility: hidden;
-            transition: all .25s ease;
-            pointer-events: none;
-            z-index: 9999;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-
-            /* Necesario para incluir imagen y texto */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* Imagen dentro del tooltip */
-        .single-award-list[data-tooltip-img]::before {
-            content: "";
-            position: absolute;
-            width: 70px;
-            height: 70px;
-            bottom: calc(100% + 5px);
-            /* Muy cerca */
-            left: 50%;
-            transform: translateX(-50%);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            opacity: 0;
-            visibility: hidden;
-            transition: all .25s ease;
-        }
-
-        /* Texto en el tooltip */
-        .single-award-list[data-tooltip-text]::after {
-            content: attr(data-tooltip-text);
-            color: #fff;
-            font-size: 14px;
-            line-height: 1.4;
-            text-align: center;
-        }
-
-        /* Mostrar imagen + texto */
-        .single-award-list[data-tooltip-img]:hover::before,
-        .single-award-list[data-tooltip-text]:hover::after {
-            opacity: 1;
-            visibility: visible;
-        }
-    </style>
+    <script type="module" src="assets/js/distortion-img.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <!-- Franjas -->
+  <rect width="900" height="200" y="0" fill="#ffcc00"/>
+  <rect width="900" height="200" y="200" fill="#00247d"/>
+  <rect width="900" height="200" y="400" fill="#cf142b"/>
+
+  <!-- Estrella base -->
+  <defs>
+    <polygon id="star" points="
+      0,-20 
+      5.88,-6.18 
+      19.02,-6.18 
+      9.51,2.36 
+      12.36,16.18 
+      0,8 
+      -12.36,16.18 
+      -9.51,2.36 
+      -19.02,-6.18 
+      -5.88,-6.18
+    " fill="#fff"/>
+  </defs>
+
+  <!-- Arco INVERTIDO -->
+  <g transform="translate(450,300)">
+    <!-- Radio: 110 -->
+    <!-- Ahora las estrellas van hacia ARRIBA del centro -->
+    <use href="#star" transform="rotate(-105) translate(0,-110) rotate(105)"/>
+    <use href="#star" transform="rotate(-75)  translate(0,-110) rotate(75)"/>
+    <use href="#star" transform="rotate(-45)  translate(0,-110) rotate(45)"/>
+    <use href="#star" transform="rotate(-15)  translate(0,-110) rotate(15)"/>
+    <use href="#star" transform="rotate(15)   translate(0,-110) rotate(-15)"/>
+    <use href="#star" transform="rotate(45)   translate(0,-110) rotate(-45)"/>
+    <use href="#star" transform="rotate(75)   translate(0,-110) rotate(-75)"/>
+    <use href="#star" transform="rotate(105)  translate(0,-110) rotate(-105)"/>
+  </g>
+</svg>
