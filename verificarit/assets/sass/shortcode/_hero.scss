@@ -1,0 +1,101 @@
+/*--------------------------------------------------------------
+  10. Hero
+----------------------------------------------------------------*/
+.cs_hero.cs_style_1 {
+  min-height: 600px;
+  height: calc(100vh - 140px);
+  max-height: 1000px;
+  position: relative;
+  padding: 80px 0;
+  @media (max-width: 575px) {
+    height: initial;
+    max-height: initial;
+  }
+  .cs_hero_text {
+    max-width: 680px;
+    position: relative;
+    z-index: 1;
+    @media (max-width: 991px) {
+      max-width: 500px;
+    }
+  }
+  .cs_hero_subtitle {
+    max-width: 620px;
+  }
+  .cs_hero_mini_title {
+    letter-spacing: 1.8px;
+  }
+  .cs_hero_btns {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px 40px;
+    @media (max-width: 991px) {
+      gap: 15px 25px;
+    }
+  }
+  .cs_hero_mini_title {
+    img {
+      flex: none;
+    }
+    &.cs_white_color {
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+  .cs_hero_player_btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    &:hover {
+      .cs_hero_play_btn_text {
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .cs_hero_play_btn_text {
+    position: relative;
+    &::before {
+      content: '';
+      height: 1px;
+      width: 0%;
+      background-color: var(--accent-color);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: all 0.4s ease;
+    }
+  }
+  .cs_hero_number {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .cs_hero_number_icon {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    flex: none;
+    @media (max-width: 991px) {
+      height: 44px;
+      width: 44px;
+      font-size: 16px;
+    }
+  }
+  &.cs_type_1 {
+    @media (max-width: 1199px) {
+      background-position: center left;
+    }
+  }
+}
+.cs_slide {
+  .cs_hero.cs_style_1 {
+    padding-bottom: 150px;
+  }
+}

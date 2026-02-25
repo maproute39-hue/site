@@ -1,0 +1,169 @@
+/*--------------------------------------------------------------
+  15. Team
+----------------------------------------------------------------*/
+.cs_team.cs_style_1 {
+  height: 100%;
+  padding: 30px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @media (max-width:1400px) {
+    padding: 20px;
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--gray2-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .cs_team_thumbnail,
+  .cs_team_info {
+    position: relative;
+    z-index: 1;
+  }
+
+  .cs_team_thumbnail {
+    padding-bottom: 20px;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .cs_social_btns.cs_style_1 {
+    border-radius: 25px;
+    padding: 18px 17px 68px;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    position: absolute;
+    left: 20px;
+    bottom: 1px;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+
+    a {
+      width: max-content;
+      height: max-content;
+      background-color: transparent;
+      border: 0;
+      font-size: 16px;
+      color: var(--heading-color);
+
+      &:hover {
+        color: var(--accent-color);
+      }
+    }
+  }
+
+  .cs_share_btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    transition: all 0.3s ease;
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      transition: all 0.3s ease;
+    }
+    i:nth-child(1) {
+      opacity: 0;
+    }
+    i:nth-child(2) {
+      opacity: 1;
+    }
+  }
+
+  .cs_team_shape {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.05;
+    transition: all 0.6s ease-in-out;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &:hover {
+    .cs_social_btns.cs_style_1 {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .cs_share_btn {
+      background-color: var(--heading-color);
+
+      i:nth-child(1) {
+        opacity: 1;
+      }
+      i:nth-child(2) {
+        opacity: 0;
+      }
+    }
+
+    .cs_team_shape {
+      opacity: 1;
+    }
+  }
+}
+/*------------------------------------------------
+ Team Details Page Stytling
+--------------------------------------------------*/
+.cs_team_details_content{
+  .cs_team_features_list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+    @media (max-width:575px) {
+      grid-template-columns: repeat(1,1fr);
+    }
+    li{
+      padding-left: 20px;
+      position: relative;
+      &::before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: var(--accent-color);
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 9px;
+      }
+    }
+  }
+  .cs_iconbox_wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    @media (max-width:575px) {
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+  .cs_social_btns.cs_style_1 a{
+width: 30px;
+height: 30px;
+  }
+}

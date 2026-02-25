@@ -1,0 +1,102 @@
+/*--------------------------------------------------------------
+  13. CTA
+----------------------------------------------------------------*/
+.cs_newsletter.cs_style_1 {
+  .cs_newsletter_content_wrapper {
+    padding: 80px 60px;
+    border: 30px solid var(--white-color);
+    border-bottom: 0;
+    margin-top: -140px;
+    overflow: hidden;
+
+    @media (max-width:1400px) {
+      padding: 30px 20px;
+      border-width: 10px;
+      margin-top: -80px;
+    }
+  }
+
+  .cs_newsletter_title {
+    flex: none;
+  }
+
+  .cs_newsletter_content {
+    display: flex;
+    gap: 25px;
+    position: relative;
+    z-index: 1;
+
+    @media (max-width:1200px) {
+      flex-direction: column;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .cs_newsletter_form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @media (max-width:767px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .cs_form_field_wrapper {
+    flex: 1;
+    width: 100%;
+  }
+
+  .cs_text_btn.cs_style_1 {
+    border: none;
+    outline: none;
+    padding: 14px 25px;
+
+    @media (max-width:767px) {
+      width: 100%;
+      padding: 14px 24px;
+      justify-content: space-between;
+    }
+
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+
+  .cs_form_field {
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--border-color);
+    color: var(--white-color);
+    background-image: url("");
+    border-radius: 0;
+  }
+
+  .form-select:focus+.cs_input_icon {
+    transform: translateY(-50%) rotateX(180deg);
+  }
+
+  option {
+    color: var(--heading-color);
+  }
+
+  .cs_input_icon {
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .cs_newsletter_shape {
+    top: 0;
+    left: 0;
+    transform: scale(1.15);
+    opacity: 0.3;
+  }
+}

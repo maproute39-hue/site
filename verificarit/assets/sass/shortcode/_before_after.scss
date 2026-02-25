@@ -1,0 +1,194 @@
+/*--------------------------------------------------------------
+22. Before After Slider
+----------------------------------------------------------------*/
+.cs_before_after_slider.cs_style_1 {
+  padding-bottom: 30px;
+
+  @media (max-width: 575px) {
+    padding-bottom: 0;
+  }
+
+  .cs_section_heading.cs_style_1 {
+    position: relative;
+    z-index: 1;
+  }
+
+  .cs_before_after_overlay {
+    width: 100%;
+    height: 63%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media (max-width: 991px) {
+      min-height: 450px;
+    }
+
+    @media (max-width: 575px) {
+      min-height: 350px;
+    }
+  }
+}
+
+.cs_before_after {
+  width: 100%;
+  position: relative;
+  height: 575px;
+
+  @media (max-width: 1400px) {
+    height: 496px;
+  }
+  @media (max-width: 1199px) {
+    height: 416px;
+  }
+  @media (max-width: 991px) {
+    height: 310px;
+  }
+  @media (max-width: 767px) {
+    height: 200px;
+  }
+
+  @media (max-width: 575px) {
+    height: 228px;
+  }
+}
+
+.cs_before_badge {
+  padding: 2px 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100px;
+
+  @media (max-width: 991px) {
+    left: 20px;
+    top: 30px;
+    transform: translateY(0);
+  }
+}
+
+.cs_after_badge {
+  padding: 2px 25px;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+
+  @media (max-width: 991px) {
+    right: 20px;
+    top: 30px;
+    transform: translateY(0);
+  }
+}
+
+.cs_before_after {
+  &::before,
+  &::after {
+    content: '';
+    width: calc(50% - 30px);
+    height: calc(100% - 30px);
+    border: 1px solid var(--accent-color);
+    position: absolute;
+    bottom: -30px;
+
+    @media (max-width: 575px) {
+      display: none;
+    }
+  }
+
+  &::before {
+    left: -30px;
+  }
+
+  &::after {
+    right: -30px;
+  }
+}
+
+.cs_before_after .cs_single_slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-position: top left;
+  background-repeat: no-repeat;
+  border-radius: inherit;
+  z-index: 1;
+}
+
+.cs_before_after .cs_single_slide.cs_before {
+  right: 50%;
+  overflow: hidden;
+}
+
+.cs_before_after .cs_handle_before_after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  left: 50%;
+  margin-left: -15px;
+  cursor: ew-resize;
+}
+
+.cs_handle_before_after span {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  padding: 20px;
+  background-color: var(--accent-color);
+  border: 5px solid var(--white-color);
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (max-width: 991px) {
+    transform: translate(-50%, -50%) scale(0.75);
+  }
+
+  @media (max-width: 575px) {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+}
+
+.cs_before_after .cs_handle_before_after:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  left: 50%;
+  margin-left: -1px;
+  background: var(--accent-color);
+  z-index: 2;
+}
+
+.cs_handle_before_after span:before,
+.cs_handle_before_after span:after {
+  content: '';
+  color: var(--white-color);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cs_handle_before_after span:before {
+  content: '';
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-right: 10px solid currentColor;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.cs_handle_before_after span:after {
+  width: 0;
+  height: 0;
+  border-left: 10px solid currentColor;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  right: 20px;
+}

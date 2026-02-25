@@ -1,0 +1,348 @@
+/*--------------------------------------------------------------
+  18. About
+----------------------------------------------------------------*/
+.cs_about.cs_style_1 {
+  .cs_about_thumbnail_wrapper {
+    padding-right: 46%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @media (max-width: 575px) {
+      padding-right: 0;
+    }
+
+    .cs_about_thumbnail {
+      &:nth-child(3) {
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        top: 70%;
+        transform: translateY(-70%);
+        padding-left: 46%;
+        @media (max-width: 575px) {
+          display: none;
+        }
+
+        img {
+          border: 10px solid var(--white-color);
+        }
+      }
+
+      img {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+
+  .cs_esperience_text {
+    max-width: 275px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: 3;
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: var(--white-color);
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    @media (max-width: 1199px) {
+      right: initial;
+      left: 56%;
+    }
+
+    @media (max-width: 767px) {
+      left: 51%;
+    }
+
+    @media (max-width: 575px) {
+      max-width: 300px;
+      left: initial;
+      right: 0;
+      padding: 10px;
+      &::after {
+        opacity: 0.3;
+      }
+    }
+  }
+  .cs_experience_title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 5px;
+    position: relative;
+    z-index: 1;
+
+    span {
+      display: inline-block;
+    }
+    @media (max-width: 1400px) {
+      .cs_fs_100 {
+        font-size: 80px;
+      }
+      .cs_fs_50 {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .cs_about_text {
+    padding-left: 30px;
+
+    @media (max-width: 1199px) {
+      padding-left: 0;
+    }
+  }
+
+  .cs_features_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 1199px) {
+      justify-content: flex-start;
+      gap: 50px;
+    }
+
+    @media (max-width: 575px) {
+      flex-direction: column;
+      align-items: start;
+      gap: 30px;
+    }
+  }
+
+  .cs_iconbox.cs_style_1 {
+    max-width: 260px;
+
+    @media (max-width: 575px) {
+      max-width: 100%;
+    }
+
+    &:nth-child(2) {
+      padding-left: 50px;
+      border-left: 1px solid var(--border-color);
+
+      @media (max-width: 767px) {
+        padding-left: 0;
+        border-left: 0;
+      }
+    }
+  }
+
+  .cs_about_btns {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    @media (max-width: 440px) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 30px;
+    }
+  }
+
+  .cs_avatar.cs_style_1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .cs_avatar_thumbnail {
+      width: 60px;
+      height: 60px;
+      padding: 5px;
+      border: 1px solid var(--accent-color);
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: inherit;
+      }
+    }
+  }
+
+  .cs_phone_call {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    bottom: 10px;
+
+    @media (max-width: 1199px) {
+      right: initial;
+      left: 56%;
+    }
+
+    @media (max-width: 575px) {
+      left: inherit;
+      right: 0;
+      position: initial;
+      margin-top: 10px;
+    }
+
+    .cs_phone_icon {
+      width: 55px;
+      height: 55px;
+      flex: none;
+      position: relative;
+
+      @media (max-width: 575px) {
+        color: var(--white-color);
+      }
+
+      &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: var(--accent-color);
+        opacity: 0.12;
+        border-radius: inherit;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        @media (max-width: 575px) {
+          opacity: 1;
+        }
+      }
+
+      i {
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+
+  .cs_about_shape_1 {
+    top: 50px;
+    left: -50px;
+
+    img {
+      animation: circular-rotation 30s linear infinite;
+      animation-direction: reverse;
+    }
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+
+  .cs_about_shape_2 {
+    bottom: 50px;
+    left: -120px;
+
+    @media (max-width: 1550px) {
+      left: -50px;
+    }
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
+
+    img {
+      animation: circular-rotation 40s linear infinite;
+    }
+  }
+  &.cs_type_1 {
+    .cs_about_thumbnail_wrapper {
+      padding-right: 60px;
+      padding-bottom: 34%;
+      @media (max-width: 575px) {
+        padding-bottom: 185px;
+      }
+    }
+    .cs_about_thumbnail {
+      &:nth-child(1) {
+        padding-right: 13%;
+        @media (max-width: 575px) {
+          padding-right: 10px;
+        }
+      }
+      &:nth-child(2) {
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        bottom: 0;
+        padding-left: 43%;
+        @media (max-width: 450px) {
+          padding-left: 175px;
+        }
+        img {
+          border-top: 24px solid var(--white-color);
+          border-left: 28px solid var(--white-color);
+          @media (max-width: 575px) {
+            border-width: 10px;
+          }
+        }
+      }
+    }
+    .cs_esperience_text {
+      color: transparent;
+      -webkit-text-stroke: 1px var(--accent-color);
+      display: -webkit-box;
+      writing-mode: vertical-rl;
+      top: 0;
+      left: 82%;
+      right: initial;
+      @media (max-width: 575px) {
+        left: initial;
+        right: 0;
+        padding-top: 0;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    .cs_servicing_year {
+      width: 172px;
+      height: 172px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 5%;
+      bottom: 3%;
+      z-index: 2;
+      @media (max-width: 575px) {
+        left: 10px;
+        bottom: 5px;
+      }
+      svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        animation: circular-rotation 30s linear infinite;
+      }
+    }
+    .cs_about_text {
+      padding-left: 0;
+    }
+    .cs_features_list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      @media (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 65px;
+        margin-top: 65px;
+      }
+    }
+  }
+}
+
+@keyframes circular-rotation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
