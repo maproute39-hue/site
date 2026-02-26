@@ -1074,6 +1074,7 @@
   </div>
   <!-- End Scroll Top Button -->
   <!-- Script -->
+   
   <script src="assets/js/jquery-3.6.0.min.js"></script>
   <script src="assets/js/wow.min.js"></script>
   <script src="assets/js/jquery.slick.min.js"></script>
@@ -1082,6 +1083,25 @@
   <script src="assets/js/main.js"></script>
   <!-- SweetAlert2 -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Cerrar menú móvil al seleccionar opción -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuLinks = document.querySelectorAll('.cs_nav_list_wrap');
+    const menuToggle = document.querySelector('.cs_menu_toggle');
+    
+    function closeMobileMenu() {
+        if (menuToggle && menuToggle.classList.contains('cs_active')) {
+            menuToggle.classList.remove('cs_active');
+        }
+    }
+    
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            closeMobileMenu();
+        });
+    });
+});
+</script>
   <script>
 document.querySelector('[name="telefono"]').addEventListener('input', function(e) {
   const value = this.value;
